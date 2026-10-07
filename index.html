@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#f5f4f0">
   <title>Algoritmos genéticos, paso a paso · Herramientas docentes</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css?v=3">
-  <script src="js/content.js?v=3" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <script src="js/content.js?v=4" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -22,9 +22,9 @@
       <div class="header-right">
         <a class="header-link" href="#publications" data-i18n="publicationsNav">Publicaciones</a>
         <a class="header-link" href="#about" data-i18n="aboutNav">Sobre el proyecto</a>
-        <div class="lang" role="group" aria-label="Idioma / Language">
-          <button type="button" data-lang="es" aria-pressed="true" aria-label="Español" disabled>ES</button>
-          <button type="button" data-lang="en" aria-pressed="false" aria-label="English" disabled>EN</button>
+        <div class="lang" role="group" aria-label="Idioma del portal" data-i18n-aria="languageLabel">
+          <button type="button" data-lang="es" lang="es" aria-pressed="true" aria-label="Español" disabled>ES</button>
+          <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English" disabled>EN</button>
         </div>
       </div>
     </header>
@@ -60,7 +60,7 @@
             <h3 data-i18n="selectionTitle">Selección</h3>
             <p class="tool-desc" data-i18n="selectionDesc">Elige los padres de la siguiente generación. Explora el equilibrio entre aptitud, presión selectiva y diversidad.</p>
             <p class="tool-topics" data-i18n="selectionTopics">Ruleta · SUS · Ranking · Torneo · Reemplazo</p>
-            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/selection-ga" aria-label="Código de selección en GitHub" data-i18n-aria="selectionCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span data-i18n="openSelection">Abrir selección</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/selection-ga" aria-label="Código de selección en GitHub" data-i18n-aria="selectionCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
           </article>
 
           <article class="tool-card crossover">
@@ -71,7 +71,7 @@
             <h3 data-i18n="crossoverTitle">Cruce</h3>
             <p class="tool-desc" data-i18n="crossoverDesc">Combina la información de dos padres. Observa qué heredan los hijos y qué conserva cada operador.</p>
             <p class="tool-topics" data-i18n="crossoverTopics">Binaria · Real · Permutaciones</p>
-            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/crossover-ga" aria-label="Código de cruce en GitHub" data-i18n-aria="crossoverCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span data-i18n="openCrossover">Abrir cruce</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/crossover-ga" aria-label="Código de cruce en GitHub" data-i18n-aria="crossoverCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
           </article>
 
           <article class="tool-card mutation">
@@ -82,7 +82,7 @@
             <h3 data-i18n="mutationTitle">Mutación</h3>
             <p class="tool-desc" data-i18n="mutationDesc">Introduce cambios aleatorios en una solución. Explora cómo la representación y el tamaño del cambio afectan a la búsqueda.</p>
             <p class="tool-topics" data-i18n="mutationTopics">Binaria · Entera · Real · Permutaciones</p>
-            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/mutation-ga" aria-label="Código de mutación en GitHub" data-i18n-aria="mutationCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span data-i18n="openMutation">Abrir mutación</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/mutation-ga" aria-label="Código de mutación en GitHub" data-i18n-aria="mutationCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
           </article>
         </div>
       </section>
@@ -108,15 +108,22 @@
               <svg class="lab-visual route-visual" viewBox="0 0 160 105" role="img" aria-label="Una ruta cerrada conecta cinco ciudades: el problema del viajante." data-i18n-aria="travellerVisual"><path d="M25 32 87 14 137 55 106 89 39 79Z"/><circle cx="25" cy="32" r="5"/><circle cx="87" cy="14" r="5"/><circle cx="137" cy="55" r="5"/><circle cx="106" cy="89" r="5"/><circle cx="39" cy="79" r="5"/></svg>
               <div><h3>EvoTraveller</h3><p data-i18n="travellerDesc">Observa un algoritmo genético aplicado al problema del viajante. Ajusta población, selección, cruce y mutación, y sigue cómo evolucionan las rutas entre generaciones.</p><p class="lab-topics" data-i18n="travellerTopics">Rutas · Aptitud · Población · Parámetros del algoritmo</p></div>
             </div>
-            <div class="lab-actions"><a class="btn primary" href="https://evotraveller.streamlit.app/" data-resource="evotraveller"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/jismartin/evotraveller" data-i18n-aria="travellerCode" aria-label="Código de EvoTraveller en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-traveller" data-i18n="relatedPaper">Publicación relacionada ↓</a></div>
+            <div class="lab-actions"><a class="btn primary" href="https://evotraveller.streamlit.app/" data-resource="evotraveller"><span data-i18n="openTraveller">Abrir EvoTraveller</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/jismartin/evotraveller" data-i18n-aria="travellerCode" aria-label="Código de EvoTraveller en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-traveller" data-i18n="relatedPaper" data-i18n-aria="travellerPaper" aria-label="Publicación relacionada de EvoTraveller">Publicación relacionada ↓</a></div>
           </article>
           <article class="lab-card" id="selection-mechanisms">
             <div class="lab-card-head"><span class="eyebrow" data-i18n="shinyEyebrow">Dinámica de la selección</span><span class="platform-label">R · Shiny</span></div>
             <div class="lab-card-body">
-              <svg class="lab-visual dynamics-visual" viewBox="0 0 160 105" role="img" aria-label="Esquema de evolución por generaciones: la aptitud crece y la diversidad disminuye." data-i18n-aria="shinyVisual"><path class="chart-axis" d="M18 12V89H145"/><path class="fitness-line" d="m22 75 24-19 24-7 24-18 24-4 24-9"/><path class="diversity-line" d="m22 23 24 8 24 22 24 10 24 13 24 7"/></svg>
+              <figure class="dynamics-figure">
+                <svg class="lab-visual dynamics-visual" viewBox="0 0 160 105" role="img" aria-label="Ejemplo esquemático de evolución por generaciones. En este ejemplo, la aptitud aumenta y la diversidad disminuye." data-i18n-aria="shinyVisual"><path class="chart-axis" d="M18 12V89H145"/><path class="fitness-line" d="m22 75 24-19 24-7 24-18 24-4 24-9"/><path class="diversity-line" d="m22 23 24 8 24 22 24 10 24 13 24 7"/></svg>
+                <figcaption class="dynamics-caption">
+                  <span data-i18n="schematicExample">Ejemplo esquemático</span>
+                  <span class="dynamics-key"><i class="dynamics-swatch" aria-hidden="true"></i><span data-i18n="fitnessLegend">Aptitud</span></span>
+                  <span class="dynamics-key"><i class="dynamics-swatch diversity" aria-hidden="true"></i><span data-i18n="diversityLegend">Diversidad</span></span>
+                </figcaption>
+              </figure>
               <div><h3>SelectionMechanisms</h3><p data-i18n="shinyDesc">Compara mecanismos de selección a lo largo de muchas generaciones y simulaciones. Explora cómo la presión selectiva afecta a la convergencia, la aptitud y la diversidad.</p><p class="lab-topics" data-i18n="shinyTopics">Selección · Convergencia · Diversidad · Comparación de modelos</p></div>
             </div>
-            <div class="lab-actions"><a class="btn primary" href="https://josemagalan.shinyapps.io/SelectionMechanisms/" data-resource="selection-mechanisms"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/SelectionMechanisms" data-i18n-aria="shinyCode" aria-label="Código de SelectionMechanisms en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-selection" data-i18n="relatedPaper">Publicación relacionada ↓</a></div>
+            <div class="lab-actions"><a class="btn primary" href="https://josemagalan.shinyapps.io/SelectionMechanisms/" data-resource="selection-mechanisms"><span data-i18n="openShiny">Abrir SelectionMechanisms</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/SelectionMechanisms" data-i18n-aria="shinyCode" aria-label="Código de SelectionMechanisms en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-selection" data-i18n="relatedPaper" data-i18n-aria="shinyPaper" aria-label="Publicación relacionada de SelectionMechanisms">Publicación relacionada ↓</a></div>
           </article>
         </div>
       </section>
@@ -153,7 +160,13 @@
 
       <section id="about" class="about-section" aria-labelledby="about-title">
         <div><p class="eyebrow" data-i18n="aboutEyebrow">Herramientas docentes abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Este portal reúne materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada herramienta en su repositorio.</p></div>
-        <div class="credits"><p class="credits-scope" data-i18n="creditsScope">Equipo de la serie de operadores y SelectionMechanisms</p><p class="authors">José Manuel Galán<sup>1</sup> · Silvia Díaz-de la Fuente<sup>2</sup> · Virginia Ahedo<sup>1</sup> · María Pereda<sup>3</sup> · José Ignacio Santos<sup>1</sup></p><p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p><p class="license-note" data-i18n="licenses">Portal: código MIT · Contenido docente CC BY 4.0</p></div>
+        <div class="credits">
+          <p class="credits-scope" data-i18n="creditsScope">Equipo de la serie de operadores y SelectionMechanisms</p>
+          <p class="authors"><a href="https://sites.google.com/site/josemagalan/">José Manuel Galán</a><sup>1</sup> · <a href="https://produccioncientifica.usal.es/investigadores/2300823/detalle?lang=en_US">Silvia Díaz-de la Fuente</a><sup>2</sup> · <a href="https://investigacion.ubu.es/investigadores/34947/detalle">Virginia Ahedo</a><sup>1</sup> · <a href="https://portalcientifico.upm.es/es/ipublic/researcher/331932">María Pereda</a><sup>3</sup> · <a href="https://investigacion.ubu.es/investigadores/35543/detalle">José Ignacio Santos</a><sup>1</sup></p>
+          <p class="credits-links" data-i18n="creditsLinks">Los nombres enlazan a páginas personales o perfiles académicos.</p>
+          <p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p>
+          <p class="license-note" data-i18n="licenses">Portal: código MIT · Contenido docente CC BY 4.0</p>
+        </div>
       </section>
       <div class="institution-logos" aria-label="Instituciones participantes" data-i18n-aria="institutions"><img src="img/logos/ubu.png" alt="Universidad de Burgos" width="178" height="64" loading="lazy"><img src="img/logos/usal.png" alt="Universidad de Salamanca" width="178" height="64" loading="lazy"><img src="img/logos/upm.png" alt="Universidad Politécnica de Madrid" width="178" height="64" loading="lazy"><img src="img/logos/goonies.png" alt="Los Goonies" width="154" height="64" loading="lazy"></div>
     </main>
