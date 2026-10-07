@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Herramientas docentes de algoritmos genéticos: explora selección, cruce y mutación paso a paso. Animaciones, práctica y recursos para Moodle en español e inglés.">
+  <meta name="theme-color" content="#f5f4f0">
+  <title>Algoritmos genéticos, paso a paso · Herramientas docentes</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/content.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#tools" data-i18n="skip">Ir a las herramientas</a>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="GA · Inicio" data-i18n-aria="homeLabel">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>GA<span class="brand-divider" aria-hidden="true"> / </span><span class="brand-text" data-i18n="brand">Herramientas docentes</span></span>
+      </a>
+      <div class="header-right">
+        <a class="header-link" href="#about" data-i18n="aboutNav">Sobre la serie</a>
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" aria-pressed="true" aria-label="Español" disabled>ES</button>
+          <button type="button" data-lang="en" aria-pressed="false" aria-label="English" disabled>EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">Explora · Practica · Compara</span></p>
+          <h1 id="hero-title"><span data-i18n="titleLine1">Algoritmos genéticos,</span><br><span class="title-accent" data-i18n="titleLine2">paso a paso.</span></h1>
+          <p class="lead" data-i18n="lead">De una población de soluciones a la siguiente. Descubre cómo se eligen los padres, se combina su información y se introduce diversidad.</p>
+          <a class="hero-link" href="#tools"><span data-i18n="choose">Elige una herramienta</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Dos cromosomas parentales combinan sus genes; una mutación cambia un gen del descendiente." data-i18n-aria="heroVisual">
+          <div class="visual-label"><span data-i18n="parents">Padres</span><span class="visual-caption" data-i18n="oneGeneration">Una generación</span></div>
+          <div class="chromosome parent-a" aria-hidden="true"><b>1</b><b>0</b><b>1</b><b>1</b><b>0</b><b>1</b></div>
+          <div class="chromosome parent-b" aria-hidden="true"><b>0</b><b>1</b><b>0</b><b>0</b><b>1</b><b>0</b></div>
+          <div class="visual-transition"><span class="transition-line" aria-hidden="true"></span><span data-i18n="crossAndMutate">Cruce + mutación</span><span aria-hidden="true">↓</span></div>
+          <div class="chromosome offspring" aria-hidden="true"><b>1</b><b>0</b><b>1</b><b class="from-b">0</b><b class="mutated">0<span class="mutation-dot"></span></b><b class="from-b">0</b></div>
+          <div class="visual-legend"><span><i class="legend-dot blue"></i><span data-i18n="parentA">Padre A</span></span><span><i class="legend-dot orange"></i><span data-i18n="parentB">Padre B</span></span><span><i class="legend-dot green"></i><span data-i18n="changedGene">Gen mutado</span></span></div>
+        </div>
+      </section>
+
+      <section id="tools" class="tools-section" aria-labelledby="tools-title">
+        <div class="section-heading"><h2 id="tools-title" data-i18n="toolsTitle">Tres herramientas. Un mismo proceso.</h2><span class="section-note" data-i18n="toolsNote">Abiertas · Interactivas · ES / EN</span></div>
+        <div class="tool-grid">
+          <article class="tool-card selection">
+            <div class="tool-top"><span class="step-index">01</span><span class="tool-question" data-i18n="selectionQuestion">¿Quién se reproduce?</span></div>
+            <div class="tool-preview selection-preview" role="img" aria-label="Los individuos con distinta aptitud pueden seleccionarse como padres." data-i18n-aria="selectionVisual">
+              <div class="fitness-chart" aria-hidden="true"><div><i style="--height:42%"></i><span>A</span></div><div><i style="--height:84%"></i><span>B</span></div><div><i style="--height:60%"></i><span>C</span></div><div><i style="--height:100%"></i><span>D</span></div><div><i style="--height:30%"></i><span>E</span></div></div>
+              <span class="preview-arrow" aria-hidden="true">→</span>
+              <div class="selected-parents" aria-hidden="true"><span>D</span><span>B</span><span>D</span></div>
+            </div>
+            <h3 data-i18n="selectionTitle">Selección</h3>
+            <p class="tool-desc" data-i18n="selectionDesc">Elige los padres de la siguiente generación. Explora el equilibrio entre aptitud, presión selectiva y diversidad.</p>
+            <p class="tool-topics" data-i18n="selectionTopics">Ruleta · SUS · Ranking · Torneo · Reemplazo</p>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/selection-ga" aria-label="Código de selección en GitHub" data-i18n-aria="selectionCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+          </article>
+
+          <article class="tool-card crossover">
+            <div class="tool-top"><span class="step-index">02</span><span class="tool-question" data-i18n="crossoverQuestion">¿Cómo se combina la información?</span></div>
+            <div class="tool-preview crossover-preview" role="img" aria-label="Un hijo toma los primeros genes del padre A y los últimos del padre B." data-i18n-aria="crossoverVisual">
+              <div class="mini-parents" aria-hidden="true"><div class="mini-chromosome blue"><b>1</b><b>0</b><b>1</b><b>1</b></div><div class="mini-chromosome orange"><b>0</b><b>1</b><b>0</b><b>0</b></div></div><span class="preview-arrow" aria-hidden="true">→</span><div class="mini-chromosome mixed" aria-hidden="true"><b>1</b><b>0</b><b>0</b><b>0</b></div>
+            </div>
+            <h3 data-i18n="crossoverTitle">Cruce</h3>
+            <p class="tool-desc" data-i18n="crossoverDesc">Combina la información de dos padres. Observa qué heredan los hijos y qué conserva cada operador.</p>
+            <p class="tool-topics" data-i18n="crossoverTopics">Binaria · Real · Permutaciones</p>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/crossover-ga" aria-label="Código de cruce en GitHub" data-i18n-aria="crossoverCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+          </article>
+
+          <article class="tool-card mutation">
+            <div class="tool-top"><span class="step-index">03</span><span class="tool-question" data-i18n="mutationQuestion">¿Cómo aparece la diversidad?</span></div>
+            <div class="tool-preview mutation-preview" role="img" aria-label="La mutación transforma el tercer bit de 1 a 0 y mantiene el resto." data-i18n-aria="mutationVisual">
+              <div class="mini-chromosome blue" aria-hidden="true"><b>1</b><b>0</b><b>1</b><b>0</b></div><span class="preview-arrow" aria-hidden="true">→</span><div class="mini-chromosome blue" aria-hidden="true"><b>1</b><b>0</b><b class="mutated">0</b><b>0</b></div>
+            </div>
+            <h3 data-i18n="mutationTitle">Mutación</h3>
+            <p class="tool-desc" data-i18n="mutationDesc">Introduce cambios aleatorios en una solución. Explora cómo la representación y el tamaño del cambio afectan a la búsqueda.</p>
+            <p class="tool-topics" data-i18n="mutationTopics">Binaria · Entera · Real · Permutaciones</p>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/mutation-ga" aria-label="Código de mutación en GitHub" data-i18n-aria="mutationCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cycle-section" aria-labelledby="cycle-title">
+        <div class="section-heading"><h2 id="cycle-title" data-i18n="cycleTitle">Así encajan en el algoritmo</h2><span class="section-note" data-i18n="cycleNote">El ciclo se repite en cada generación</span></div>
+        <ol class="cycle">
+          <li><span class="cycle-label" data-i18n="evaluate">Evaluación</span><small data-i18n="evaluateHint">Mide la aptitud</small></li>
+          <li class="cycle-selection"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="selectionTitle">Selección</span><small data-i18n="selectHint">Elige los padres</small></a></li>
+          <li class="cycle-crossover"><a href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span class="cycle-label" data-i18n="crossoverTitle">Cruce</span><small data-i18n="crossHint">Combina los genes</small></a></li>
+          <li class="cycle-mutation"><a href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span class="cycle-label" data-i18n="mutationTitle">Mutación</span><small data-i18n="mutateHint">Introduce variación</small></a></li>
+          <li><span class="cycle-label" data-i18n="survive">Evaluación y reemplazo</span><small data-i18n="surviveHint">Evalúa hijos y elige supervivientes</small></li>
+        </ol>
+        <p class="cycle-footnote"><span aria-hidden="true">↻</span><span data-i18n="replacementNote">El reemplazo también es selección: decide qué individuos pasan a la siguiente generación.</span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="replacementLink">Explorarlo →</a></p>
+      </section>
+
+      <section class="learning-section" aria-labelledby="learning-title">
+        <div class="learning-intro"><p class="eyebrow" data-i18n="learningEyebrow">En clase o por tu cuenta</p><h2 id="learning-title" data-i18n="learningTitle">Aprende haciendo.</h2><p data-i18n="learningLead">Las tres herramientas comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.</p></div>
+        <div class="learning-grid">
+          <div class="learning-item"><span class="feature-icon" aria-hidden="true">▷</span><div><h3 data-i18n="animateTitle">Sigue cada paso</h3><p data-i18n="animateDesc">Animaciones con explicación, pseudocódigo y código en Python y JavaScript.</p></div></div>
+          <div class="learning-item"><span class="feature-icon" aria-hidden="true">✎</span><div><h3 data-i18n="practiceTitle">Predice el resultado</h3><p data-i18n="practiceDesc">Resuelve el ejemplo y comprueba tu respuesta en el modo de práctica.</p></div></div>
+          <div class="learning-item"><span class="feature-icon" aria-hidden="true">⇄</span><div><h3 data-i18n="compareTitle">Compara alternativas</h3><p data-i18n="compareDesc">Aplica distintos mecanismos u operadores a los mismos datos.</p></div></div>
+          <div class="learning-item"><span class="feature-icon" aria-hidden="true">↓</span><div><h3 data-i18n="moodleTitle">Llévalo a Moodle</h3><p data-i18n="moodleDesc">Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.</p><div class="moodle-links"><a href="https://josemagalan.github.io/selection-ga/#page=moodle&amp;lang=es" data-tool="selection-ga" data-page="moodle" data-i18n="selectionTitle">Selección</a><a href="https://josemagalan.github.io/crossover-ga/#page=moodle&amp;lang=es" data-tool="crossover-ga" data-page="moodle" data-i18n="crossoverTitle">Cruce</a><a href="https://josemagalan.github.io/mutation-ga/#page=moodle&amp;lang=es" data-tool="mutation-ga" data-page="moodle" data-i18n="mutationTitle">Mutación</a></div></div></div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div><p class="eyebrow" data-i18n="aboutEyebrow">Una serie de herramientas abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Desarrollados por miembros del grupo de investigación Los Goonies.</p></div>
+        <div class="credits"><p class="authors">José Manuel Galán<sup>1</sup> · Silvia Díaz-de la Fuente<sup>2</sup> · Virginia Ahedo<sup>1</sup> · María Pereda<sup>3</sup> · José Ignacio Santos<sup>1</sup></p><p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p><p class="license-note" data-i18n="licenses">Código: MIT · Contenido docente: CC BY 4.0</p></div>
+      </section>
+      <div class="institution-logos" aria-label="Instituciones participantes" data-i18n-aria="institutions"><img src="img/logos/ubu.png" alt="Universidad de Burgos" width="178" height="64" loading="lazy"><img src="img/logos/usal.png" alt="Universidad de Salamanca" width="178" height="64" loading="lazy"><img src="img/logos/upm.png" alt="Universidad Politécnica de Madrid" width="178" height="64" loading="lazy"><img src="img/logos/goonies.png" alt="Los Goonies" width="154" height="64" loading="lazy"></div>
+    </main>
+
+    <footer class="footer"><span data-i18n="footerText">Algoritmos genéticos · Herramientas docentes abiertas</span><a href="#top"><span data-i18n="backTop">Volver arriba</span><span aria-hidden="true">↑</span></a></footer>
+    <noscript><p class="noscript-note">Puedes abrir todas las herramientas sin JavaScript. Actívalo para cambiar el idioma de este portal. / All tool links work without JavaScript. Enable it to change this portal’s language.</p></noscript>
+  </div>
+</body>
+</html>
