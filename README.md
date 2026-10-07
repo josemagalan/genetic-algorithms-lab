@@ -2,6 +2,8 @@
 
 A bilingual, static portal for genetic algorithm teaching tools, their source repositories and related scientific publications.
 
+[Open the portal / Abrir el portal](https://josemagalan.github.io/genetic-algorithms-lab/)
+
 Portal estático bilingüe que reúne cinco herramientas docentes. La autoría y la licencia de cada herramienta se indican en sus repositorios y publicaciones:
 
 | Tool / Herramienta | Application / Aplicación | Source / Código |
@@ -61,20 +63,22 @@ Checks cover translations and accessible labels, language precedence, applicatio
 
 ## Publicación en GitHub Pages / Publishing to GitHub Pages
 
-El nombre confirmado es `genetic-algorithms-lab`. El repositorio local está creado. Todavía no se ha conectado un repositorio remoto para este portal.
+El portal está publicado en [GitHub Pages](https://josemagalan.github.io/genetic-algorithms-lab/) desde [josemagalan/genetic-algorithms-lab](https://github.com/josemagalan/genetic-algorithms-lab), rama `main`, carpeta raíz. Los cambios enviados a `main` se publican automáticamente.
 
-The confirmed name is `genetic-algorithms-lab`. The local repository exists. No remote repository has been connected for this portal yet.
+The portal is published on GitHub Pages from the `main` branch and repository root. Changes pushed to `main` are deployed automatically.
 
 Configuración contrastada con la [documentación de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). / Configuration follows the official GitHub Pages documentation.
 
-1. Crea un repositorio público y sube el contenido de esta carpeta a su raíz. / Create a public repository and upload this folder's contents to its root.
-2. En **Settings → Pages**, elige **Deploy from a branch**, la rama del portal y **/(root)**. / In **Settings → Pages**, choose **Deploy from a branch**, the portal branch and **/(root)**.
-3. Conserva `.nojekyll`. Las rutas de CSS, JavaScript e imágenes son relativas, por lo que funcionan bajo el nombre del repositorio. / Keep `.nojekyll`; relative asset paths work under the repository name.
-4. Verifica la dirección publicada antes de aplicar los enlaces de vuelta en las tres aplicaciones. / Verify the published URL before applying the return links in the three applications.
+Para publicar una copia / To publish a fork:
 
-Para `josemagalan/genetic-algorithms-lab`, la dirección prevista es `https://josemagalan.github.io/genetic-algorithms-lab/`. El despliegue sigue pendiente.
+1. Sube el contenido de esta carpeta a la raíz del repositorio público. / Upload this folder's contents to the public repository root.
+2. En **Settings → Pages**, elige **Deploy from a branch**, `main` y **/(root)**. / In **Settings → Pages**, choose **Deploy from a branch**, `main` and **/(root)**.
+3. Conserva `.nojekyll` y las rutas relativas de CSS, JavaScript e imágenes. / Keep `.nojekyll` and relative asset paths.
+4. Usa la dirección de tu copia para los enlaces de vuelta. / Use your fork's published URL for return links.
 
-For `josemagalan/genetic-algorithms-lab`, the expected URL is `https://josemagalan.github.io/genetic-algorithms-lab/`. Deployment is still pending.
+Selección, cruce y mutación incluyen un enlace global de vuelta al portal que conserva el idioma. Sus README también enlazan al portal.
+
+Selection, crossover and mutation include a global return link that preserves the language. Their README files also link to this portal.
 
 ## Créditos y licencias / Credits and licenses
 
