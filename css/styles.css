@@ -284,7 +284,24 @@ sup { font-size: .6em; padding-left: 2px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print {
-  :root { --bg: #ffffff; --card: #ffffff; --ink: #1c1c1f; --muted: #50505a; --line: #bdbdbd; }
+  :root {
+    --bg: #ffffff;
+    --card: #ffffff;
+    --ink: #1c1c1f;
+    --muted: #50505a;
+    --line: #bdbdbd;
+    --blue: #0072b2;
+    --orange: #e69f00;
+    --green: #009e73;
+    --blue-text: #0067a0;
+    --orange-text: #9a6400;
+    --green-text: #007956;
+    --blue-ink: #ffffff;
+    --green-ink: #0b241c;
+    --wash: #eeede8;
+    color-scheme: light;
+  }
+  .hero-visual, .tool-preview, .lab-visual, .btn.primary { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .wrap { max-width: none; padding: 0; }
   .lang, .hero-link, .footer, .skip-link { display: none; }
   .hero { padding-block: 25px; }
