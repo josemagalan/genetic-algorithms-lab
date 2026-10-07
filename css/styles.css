@@ -283,6 +283,7 @@ sup { font-size: .6em; padding-left: 2px; }
   .mini-chromosome b { width: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@page { size: A4; margin: 14mm; }
 @media print {
   :root {
     --bg: #ffffff;
@@ -303,12 +304,35 @@ sup { font-size: .6em; padding-left: 2px; }
   }
   .hero-visual, .tool-preview, .lab-visual, .btn.primary { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .wrap { max-width: none; padding: 0; }
-  .lang, .hero-link, .footer, .skip-link { display: none; }
-  .hero { padding-block: 25px; }
+  .lang, .hero-link, .footer, .skip-link, .header-right { display: none; }
+  .topbar { padding-bottom: 12px; }
+  .hero { grid-template-columns: 1.3fr 1fr; gap: 24px; padding-block: 22px; break-inside: avoid; }
+  h1 { font-size: 26pt; }
+  .lead { font-size: 10pt; margin-block: 12px; }
+  .hero-visual { transform: none; padding: 12px; }
+  .chromosome b { min-height: 28px; font-size: 10pt; }
+  .section-heading { break-after: avoid; }
+  h2, h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
   .tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-  .tool-card { display: flex; padding: 14px; break-inside: avoid; }
-  .tool-preview { min-height: 94px; }
+  .tool-card { display: flex; padding: 12px; break-inside: avoid; }
+  .tool-card h3 { font-size: 16pt; margin-top: 0; }
+  .tool-preview { min-height: 80px; height: 80px; gap: 6px; padding: 6px; margin-block: 12px; }
+  .mini-chromosome b { width: 15px; height: 23px; font-size: 8pt; }
+  .mini-chromosome { gap: 2px; }
+  .fitness-chart { gap: 4px; }
+  .fitness-chart i { width: 11px; }
+  .selected-parents { gap: 3px; }
+  .selected-parents span { width: 17px; }
   .tool-actions { flex-wrap: wrap; }
-  .cycle-section, .learning-section, .about-section { break-inside: avoid; }
-  .lab-card, .publication { break-inside: avoid; }
+  .cycle-section { margin-top: 25px; }
+  .lab-section, .publications-section { break-before: page; margin-top: 0; }
+  .lab-card-body { grid-template-columns: 100px minmax(0, 1fr); gap: 12px; }
+  .lab-visual, .dynamics-figure { width: 100px; }
+  .lab-card { padding: 16px; }
+  .lab-card h3 { font-size: 13pt; }
+  .learning-section { margin-top: 28px; padding-block: 24px; }
+  .about-section { padding-top: 24px; }
+  .cycle-section, .learning-section, .about-section, .institution-logos { break-inside: avoid; }
+  .lab-card, .publication, .learning-item { break-inside: avoid; }
 }
