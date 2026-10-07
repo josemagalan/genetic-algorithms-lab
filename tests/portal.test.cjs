@@ -57,7 +57,7 @@ test('the page remains navigable with JavaScript disabled and uses existing dest
 
 test('all local scripts, styles, icons and logos exist; no CDN is required', () => {
   const files = [...html.matchAll(/(?:src|href)="((?:css|js|img)\/[^\"]+)"/g)].map((match) => match[1]);
-  for (const file of files) assert.ok(fs.existsSync(path.join(root, file)), file);
+  for (const file of files) assert.ok(fs.existsSync(path.join(root, file.split('?')[0])), file);
   assert.equal(files.filter((file) => file.endsWith('.png')).length, 4);
   assert.ok(!html.includes('https://cdn.'));
 });
