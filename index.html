@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Herramientas docentes de algoritmos genéticos: explora selección, cruce y mutación paso a paso. Animaciones, práctica y recursos para Moodle en español e inglés.">
+  <meta name="description" content="Laboratorio docente de algoritmos genéticos: selección, cruce, mutación, EvoTraveller y SelectionMechanisms. Herramientas interactivas y publicaciones científicas.">
   <meta name="theme-color" content="#f5f4f0">
   <title>Algoritmos genéticos, paso a paso · Herramientas docentes</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -20,7 +20,8 @@
         <span>GA<span class="brand-divider" aria-hidden="true"> / </span><span class="brand-text" data-i18n="brand">Herramientas docentes</span></span>
       </a>
       <div class="header-right">
-        <a class="header-link" href="#about" data-i18n="aboutNav">Sobre la serie</a>
+        <a class="header-link" href="#publications" data-i18n="publicationsNav">Publicaciones</a>
+        <a class="header-link" href="#about" data-i18n="aboutNav">Sobre el proyecto</a>
         <div class="lang" role="group" aria-label="Idioma / Language">
           <button type="button" data-lang="es" aria-pressed="true" aria-label="Español" disabled>ES</button>
           <button type="button" data-lang="en" aria-pressed="false" aria-label="English" disabled>EN</button>
@@ -47,7 +48,7 @@
       </section>
 
       <section id="tools" class="tools-section" aria-labelledby="tools-title">
-        <div class="section-heading"><h2 id="tools-title" data-i18n="toolsTitle">Tres herramientas. Un mismo proceso.</h2><span class="section-note" data-i18n="toolsNote">Abiertas · Interactivas · ES / EN</span></div>
+        <div class="section-heading"><h2 id="tools-title" data-i18n="toolsTitle">Tres operadores. Un mismo proceso.</h2><span class="section-note" data-i18n="toolsNote">Abiertas · Interactivas · ES / EN</span></div>
         <div class="tool-grid">
           <article class="tool-card selection">
             <div class="tool-top"><span class="step-index">01</span><span class="tool-question" data-i18n="selectionQuestion">¿Quién se reproduce?</span></div>
@@ -98,8 +99,30 @@
         <p class="cycle-footnote"><span aria-hidden="true">↻</span><span data-i18n="replacementNote">El reemplazo también es selección: decide qué individuos pasan a la siguiente generación.</span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="replacementLink">Explorarlo →</a></p>
       </section>
 
+      <section class="lab-section" aria-labelledby="lab-title">
+        <div class="section-heading"><h2 id="lab-title" data-i18n="labTitle">Experimenta a lo largo de generaciones</h2><span class="section-note" data-i18n="labNote">Del operador a la evolución de la población</span></div>
+        <div class="lab-grid">
+          <article class="lab-card" id="evotraveller">
+            <div class="lab-card-head"><span class="eyebrow" data-i18n="travellerEyebrow">El algoritmo completo</span><span class="platform-label">Python · Streamlit</span></div>
+            <div class="lab-card-body">
+              <svg class="lab-visual route-visual" viewBox="0 0 160 105" role="img" aria-label="Una ruta cerrada conecta cinco ciudades: el problema del viajante." data-i18n-aria="travellerVisual"><path d="M25 32 87 14 137 55 106 89 39 79Z"/><circle cx="25" cy="32" r="5"/><circle cx="87" cy="14" r="5"/><circle cx="137" cy="55" r="5"/><circle cx="106" cy="89" r="5"/><circle cx="39" cy="79" r="5"/></svg>
+              <div><h3>EvoTraveller</h3><p data-i18n="travellerDesc">Observa un algoritmo genético aplicado al problema del viajante. Ajusta población, selección, cruce y mutación, y sigue cómo evolucionan las rutas entre generaciones.</p><p class="lab-topics" data-i18n="travellerTopics">Rutas · Aptitud · Población · Parámetros del algoritmo</p></div>
+            </div>
+            <div class="lab-actions"><a class="btn primary" href="https://evotraveller.streamlit.app/" data-resource="evotraveller"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/jismartin/evotraveller" data-i18n-aria="travellerCode" aria-label="Código de EvoTraveller en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-traveller" data-i18n="relatedPaper">Publicación relacionada ↓</a></div>
+          </article>
+          <article class="lab-card" id="selection-mechanisms">
+            <div class="lab-card-head"><span class="eyebrow" data-i18n="shinyEyebrow">Dinámica de la selección</span><span class="platform-label">R · Shiny</span></div>
+            <div class="lab-card-body">
+              <svg class="lab-visual dynamics-visual" viewBox="0 0 160 105" role="img" aria-label="Esquema de evolución por generaciones: la aptitud crece y la diversidad disminuye." data-i18n-aria="shinyVisual"><path class="chart-axis" d="M18 12V89H145"/><path class="fitness-line" d="m22 75 24-19 24-7 24-18 24-4 24-9"/><path class="diversity-line" d="m22 23 24 8 24 22 24 10 24 13 24 7"/></svg>
+              <div><h3>SelectionMechanisms</h3><p data-i18n="shinyDesc">Compara mecanismos de selección a lo largo de muchas generaciones y simulaciones. Explora cómo la presión selectiva afecta a la convergencia, la aptitud y la diversidad.</p><p class="lab-topics" data-i18n="shinyTopics">Selección · Convergencia · Diversidad · Comparación de modelos</p></div>
+            </div>
+            <div class="lab-actions"><a class="btn primary" href="https://josemagalan.shinyapps.io/SelectionMechanisms/" data-resource="selection-mechanisms"><span data-i18n="openTool">Abrir herramienta</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/SelectionMechanisms" data-i18n-aria="shinyCode" aria-label="Código de SelectionMechanisms en GitHub">GitHub ↗</a><a class="paper-link" href="#paper-selection" data-i18n="relatedPaper">Publicación relacionada ↓</a></div>
+          </article>
+        </div>
+      </section>
+
       <section class="learning-section" aria-labelledby="learning-title">
-        <div class="learning-intro"><p class="eyebrow" data-i18n="learningEyebrow">En clase o por tu cuenta</p><h2 id="learning-title" data-i18n="learningTitle">Aprende haciendo.</h2><p data-i18n="learningLead">Las tres herramientas comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.</p></div>
+        <div class="learning-intro"><p class="eyebrow" data-i18n="learningEyebrow">En clase o por tu cuenta</p><h2 id="learning-title" data-i18n="learningTitle">Aprende haciendo.</h2><p data-i18n="learningLead">Las herramientas de selección, cruce y mutación comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.</p></div>
         <div class="learning-grid">
           <div class="learning-item"><span class="feature-icon" aria-hidden="true">▷</span><div><h3 data-i18n="animateTitle">Sigue cada paso</h3><p data-i18n="animateDesc">Animaciones con explicación, pseudocódigo y código en Python y JavaScript.</p></div></div>
           <div class="learning-item"><span class="feature-icon" aria-hidden="true">✎</span><div><h3 data-i18n="practiceTitle">Predice el resultado</h3><p data-i18n="practiceDesc">Resuelve el ejemplo y comprueba tu respuesta en el modo de práctica.</p></div></div>
@@ -108,9 +131,29 @@
         </div>
       </section>
 
+      <section id="publications" class="publications-section" aria-labelledby="publications-title">
+        <div class="section-heading"><h2 id="publications-title" data-i18n="publicationsTitle">Publicaciones relacionadas</h2><span class="section-note" data-i18n="publicationsNote">La investigación detrás de las herramientas</span></div>
+        <div class="publication-list">
+          <article class="publication" id="paper-traveller" data-publication-status="published">
+            <div class="publication-meta"><span class="publication-status published" data-i18n="publishedStatus">Publicado · 2025</span><a href="#evotraveller">EvoTraveller ↑</a></div>
+            <h3 lang="en">Interactive Visualization of Genetic Algorithm Solutions for the Traveling Salesman Problem: An Educational Tool</h3>
+            <p class="publication-authors">José Ignacio Santos · Virginia Ahedo · María Pereda · José Manuel Galán</p>
+            <p class="publication-venue"><cite>Organizational Engineering, Coping with Complexity</cite> · CIO 2024 · <span lang="en">Lecture Notes on Data Engineering and Communications Technologies</span>, 239 · pp. 6–10 · Springer, 2025.</p>
+            <a class="publication-doi" href="https://doi.org/10.1007/978-3-031-82334-3_2"><span data-i18n="viewPublished">Ver publicación en Springer</span><span aria-hidden="true"> ↗</span><small>DOI: 10.1007/978-3-031-82334-3_2</small></a>
+          </article>
+          <article class="publication" id="paper-selection" data-publication-status="accepted">
+            <div class="publication-meta"><span class="publication-status accepted" data-i18n="acceptedStatus">Aceptado · Pendiente de publicación</span><a href="#selection-mechanisms">SelectionMechanisms ↑</a></div>
+            <h3 lang="en">Visualizing Selection Pressure in Genetic Algorithms: An Interactive Tool for Convergence and Diversity Analysis</h3>
+            <p class="publication-authors">José Manuel Galán · Silvia Díaz-de la Fuente · Virginia Ahedo · María Pereda · José Ignacio Santos</p>
+            <p class="publication-venue" data-i18n="acceptedVenue">CIO 2026 · Aceptado para publicación en Springer Lecture Notes.</p>
+            <p class="publication-pending" data-i18n="acceptedNote">La referencia editorial y el enlace a la publicación se añadirán cuando estén disponibles.</p>
+          </article>
+        </div>
+      </section>
+
       <section id="about" class="about-section" aria-labelledby="about-title">
-        <div><p class="eyebrow" data-i18n="aboutEyebrow">Una serie de herramientas abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Desarrollados por miembros del grupo de investigación Los Goonies.</p></div>
-        <div class="credits"><p class="authors">José Manuel Galán<sup>1</sup> · Silvia Díaz-de la Fuente<sup>2</sup> · Virginia Ahedo<sup>1</sup> · María Pereda<sup>3</sup> · José Ignacio Santos<sup>1</sup></p><p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p><p class="license-note" data-i18n="licenses">Código: MIT · Contenido docente: CC BY 4.0</p></div>
+        <div><p class="eyebrow" data-i18n="aboutEyebrow">Herramientas docentes abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Este portal reúne materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada herramienta en su repositorio.</p></div>
+        <div class="credits"><p class="credits-scope" data-i18n="creditsScope">Equipo de la serie de operadores y SelectionMechanisms</p><p class="authors">José Manuel Galán<sup>1</sup> · Silvia Díaz-de la Fuente<sup>2</sup> · Virginia Ahedo<sup>1</sup> · María Pereda<sup>3</sup> · José Ignacio Santos<sup>1</sup></p><p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p><p class="license-note" data-i18n="licenses">Portal: código MIT · Contenido docente CC BY 4.0</p></div>
       </section>
       <div class="institution-logos" aria-label="Instituciones participantes" data-i18n-aria="institutions"><img src="img/logos/ubu.png" alt="Universidad de Burgos" width="178" height="64" loading="lazy"><img src="img/logos/usal.png" alt="Universidad de Salamanca" width="178" height="64" loading="lazy"><img src="img/logos/upm.png" alt="Universidad Politécnica de Madrid" width="178" height="64" loading="lazy"><img src="img/logos/goonies.png" alt="Los Goonies" width="154" height="64" loading="lazy"></div>
     </main>

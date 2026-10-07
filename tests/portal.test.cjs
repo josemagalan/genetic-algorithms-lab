@@ -61,3 +61,30 @@ test('all local scripts, styles, icons and logos exist; no CDN is required', () 
   assert.equal(files.filter((file) => file.endsWith('.png')).length, 4);
   assert.ok(!html.includes('https://cdn.'));
 });
+
+test('EvoTraveller and Shiny keep their canonical app and source URLs in both languages', () => {
+  for (const url of ['https://evotraveller.streamlit.app/', 'https://github.com/jismartin/evotraveller',
+    'https://josemagalan.shinyapps.io/SelectionMechanisms/', 'https://github.com/josemagalan/SelectionMechanisms']) {
+    assert.ok(html.includes('href="' + url + '"'), url);
+  }
+  assert.equal((html.match(/data-resource="/g) || []).length, 2);
+  // These apps do not share the operator tools' language hash contract.
+  assert.ok(!html.includes('streamlit.app/#lang='));
+  assert.ok(!html.includes('shinyapps.io/SelectionMechanisms/#lang='));
+});
+
+test('published and accepted papers remain distinct; the accepted paper has no invented DOI or download', () => {
+  const published = html.match(/<article[^>]+data-publication-status="published"[\s\S]*?<\/article>/)[0];
+  const accepted = html.match(/<article[^>]+data-publication-status="accepted"[\s\S]*?<\/article>/)[0];
+  assert.ok(published.includes('https://doi.org/10.1007/978-3-031-82334-3_2'));
+  assert.ok(published.includes('2025'));
+  assert.ok(accepted.includes('Visualizing Selection Pressure'));
+  assert.ok(accepted.includes('CIO 2026'));
+  assert.ok(!accepted.includes('doi.org'));
+  assert.ok(!html.includes('.docx'));
+  assert.ok(!html.includes('.pdf'));
+  for (const language of ['es', 'en']) {
+    assert.notEqual(messages[language].publishedStatus, messages[language].acceptedStatus);
+    assert.ok(messages[language].acceptedNote);
+  }
+});
