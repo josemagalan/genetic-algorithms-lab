@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Laboratorio docente de algoritmos genéticos: selección, cruce, mutación, EvoTraveller y SelectionMechanisms. Herramientas interactivas y publicaciones científicas.">
+  <meta name="description" content="Laboratorio docente de algoritmos genéticos: representación, inicialización, evaluación, selección, cruce y mutación, con simuladores, manual y publicaciones.">
   <meta name="theme-color" content="#f5f4f0">
   <title>Algoritmos genéticos, paso a paso · Herramientas docentes</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css?v=6">
-  <script src="js/content.js?v=4" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=7">
+  <script src="js/content.js?v=5" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -20,6 +20,7 @@
         <span>GA<span class="brand-divider" aria-hidden="true"> / </span><span class="brand-text" data-i18n="brand">Herramientas docentes</span></span>
       </a>
       <div class="header-right">
+        <a class="header-link" href="#manual" data-i18n="manualNav">Manual</a>
         <a class="header-link" href="#publications" data-i18n="publicationsNav">Publicaciones</a>
         <a class="header-link" href="#about" data-i18n="aboutNav">Sobre el proyecto</a>
         <div class="lang" role="group" aria-label="Idioma del portal" data-i18n-aria="languageLabel">
@@ -34,7 +35,7 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">Explora · Practica · Compara</span></p>
           <h1 id="hero-title"><span data-i18n="titleLine1">Algoritmos genéticos,</span><br><span class="title-accent" data-i18n="titleLine2">paso a paso.</span></h1>
-          <p class="lead" data-i18n="lead">De una población de soluciones a la siguiente. Descubre cómo se eligen los padres, se combina su información y se introduce diversidad.</p>
+          <p class="lead" data-i18n="lead">Desde cómo se representa una solución hasta cómo evoluciona una población. Aprende cada decisión con módulos interactivos, simuladores y un manual práctico.</p>
           <a class="hero-link" href="#tools"><span data-i18n="choose">Elige una herramienta</span><span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-visual" role="img" aria-label="Dos cromosomas parentales combinan sus genes; una mutación cambia un gen del descendiente." data-i18n-aria="heroVisual">
@@ -48,10 +49,32 @@
       </section>
 
       <section id="tools" class="tools-section" aria-labelledby="tools-title">
-        <div class="section-heading"><h2 id="tools-title" data-i18n="toolsTitle">Tres operadores. Un mismo proceso.</h2><span class="section-note" data-i18n="toolsNote">Abiertas · Interactivas · ES / EN</span></div>
+        <div class="section-heading"><h2 id="tools-title" data-i18n="toolsTitle">Cinco módulos. Un mismo proceso.</h2><span class="section-note" data-i18n="toolsNote">Abiertos · Interactivos · ES / EN</span></div>
         <div class="tool-grid">
+          <article class="tool-card representation">
+            <div class="tool-top"><span class="step-index">01</span><span class="tool-question" data-i18n="representationQuestion">¿Cómo se escribe una solución?</span></div>
+            <div class="tool-preview representation-preview" role="img" aria-label="Una solución se traduce entre el problema, un cromosoma y su forma decodificada." data-i18n-aria="representationVisual">
+              <div class="representation-problem" aria-hidden="true"><span>□</span><span>△</span><span>○</span></div><span class="preview-arrow" aria-hidden="true">→</span><div class="mini-chromosome blue" aria-hidden="true"><b>1</b><b>0</b><b>2</b><b>1</b></div>
+            </div>
+            <h3 data-i18n="representationTitle">Representación</h3>
+            <p class="tool-desc" data-i18n="representationDesc">Convierte un problema en cromosomas. Compara seis codificaciones para mochila, asignación, viajante y funciones continuas.</p>
+            <p class="tool-topics" data-i18n="representationTopics">Binaria · Entera · Permutaciones · Real</p>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/representation-ga/#lang=es" data-tool="representation-ga"><span data-i18n="openRepresentation">Abrir representación</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/representation-ga" aria-label="Código de representación en GitHub" data-i18n-aria="representationCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+          </article>
+
+          <article class="tool-card initialization">
+            <div class="tool-top"><span class="step-index">02</span><span class="tool-question" data-i18n="initializationQuestion">¿Cómo empieza y se mide?</span></div>
+            <div class="tool-preview initialization-preview" role="img" aria-label="Una población inicial de cromosomas recibe valores de aptitud distintos." data-i18n-aria="initializationVisual">
+              <div class="initial-population" aria-hidden="true"><span>1010</span><span>0111</span><span>1100</span></div><span class="preview-arrow" aria-hidden="true">→</span><div class="fitness-values" aria-hidden="true"><i>8</i><i>5</i><i>7</i></div>
+            </div>
+            <h3 data-i18n="initializationTitle">Inicialización y evaluación</h3>
+            <p class="tool-desc" data-i18n="initializationDesc">Crea la población inicial y calcula la aptitud. Compara diversidad, factibilidad, coste y paisajes de aptitud.</p>
+            <p class="tool-topics" data-i18n="initializationTopics">Poblaciones · Aptitud · Restricciones · Ruido</p>
+            <div class="tool-actions"><a class="btn primary" href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span data-i18n="openInitialization">Abrir inicialización y evaluación</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/initialization-and-evaluation-ga" aria-label="Código de inicialización y evaluación en GitHub" data-i18n-aria="initializationCode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></svg><span>GitHub</span></a></div>
+          </article>
+
           <article class="tool-card selection">
-            <div class="tool-top"><span class="step-index">01</span><span class="tool-question" data-i18n="selectionQuestion">¿Quién se reproduce?</span></div>
+            <div class="tool-top"><span class="step-index">03</span><span class="tool-question" data-i18n="selectionQuestion">¿Quién se reproduce?</span></div>
             <div class="tool-preview selection-preview" role="img" aria-label="Los individuos con distinta aptitud pueden seleccionarse como padres." data-i18n-aria="selectionVisual">
               <div class="fitness-chart" aria-hidden="true"><div><i style="--height:42%"></i><span>A</span></div><div><i style="--height:84%"></i><span>B</span></div><div><i style="--height:60%"></i><span>C</span></div><div><i style="--height:100%"></i><span>D</span></div><div><i style="--height:30%"></i><span>E</span></div></div>
               <span class="preview-arrow" aria-hidden="true">→</span>
@@ -64,7 +87,7 @@
           </article>
 
           <article class="tool-card crossover">
-            <div class="tool-top"><span class="step-index">02</span><span class="tool-question" data-i18n="crossoverQuestion">¿Cómo se combina la información?</span></div>
+            <div class="tool-top"><span class="step-index">04</span><span class="tool-question" data-i18n="crossoverQuestion">¿Cómo se combina la información?</span></div>
             <div class="tool-preview crossover-preview" role="img" aria-label="Un hijo toma los primeros genes del padre A y los últimos del padre B." data-i18n-aria="crossoverVisual">
               <div class="mini-parents" aria-hidden="true"><div class="mini-chromosome blue"><b>1</b><b>0</b><b>1</b><b>1</b></div><div class="mini-chromosome orange"><b>0</b><b>1</b><b>0</b><b>0</b></div></div><span class="preview-arrow" aria-hidden="true">→</span><div class="mini-chromosome mixed" aria-hidden="true"><b>1</b><b>0</b><b>0</b><b>0</b></div>
             </div>
@@ -75,7 +98,7 @@
           </article>
 
           <article class="tool-card mutation">
-            <div class="tool-top"><span class="step-index">03</span><span class="tool-question" data-i18n="mutationQuestion">¿Cómo aparece la diversidad?</span></div>
+            <div class="tool-top"><span class="step-index">05</span><span class="tool-question" data-i18n="mutationQuestion">¿Cómo aparece la diversidad?</span></div>
             <div class="tool-preview mutation-preview" role="img" aria-label="La mutación transforma el tercer bit de 1 a 0 y mantiene el resto." data-i18n-aria="mutationVisual">
               <div class="mini-chromosome blue" aria-hidden="true"><b>1</b><b>0</b><b>1</b><b>0</b></div><span class="preview-arrow" aria-hidden="true">→</span><div class="mini-chromosome blue" aria-hidden="true"><b>1</b><b>0</b><b class="mutated">0</b><b>0</b></div>
             </div>
@@ -89,14 +112,15 @@
 
       <section class="cycle-section" aria-labelledby="cycle-title">
         <div class="section-heading"><h2 id="cycle-title" data-i18n="cycleTitle">Así encajan en el algoritmo</h2><span class="section-note" data-i18n="cycleNote">El ciclo se repite en cada generación</span></div>
+        <p class="cycle-prelude"><strong data-i18n="beforeCycle">Antes del ciclo:</strong> <a href="https://josemagalan.github.io/representation-ga/#lang=es" data-tool="representation-ga" data-i18n="representFirst">representa el problema</a><span aria-hidden="true">→</span><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga" data-i18n="initializeFirst">crea y evalúa la población inicial</a>.</p>
         <ol class="cycle">
-          <li><span class="cycle-label" data-i18n="evaluate">Evaluación</span><small data-i18n="evaluateHint">Mide la aptitud</small></li>
+          <li class="cycle-evaluation"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="evaluate">Evaluación</span><small data-i18n="evaluateHint">Mide la aptitud</small></a></li>
           <li class="cycle-selection"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="selectionTitle">Selección</span><small data-i18n="selectHint">Elige los padres</small></a></li>
           <li class="cycle-crossover"><a href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span class="cycle-label" data-i18n="crossoverTitle">Cruce</span><small data-i18n="crossHint">Combina los genes</small></a></li>
           <li class="cycle-mutation"><a href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span class="cycle-label" data-i18n="mutationTitle">Mutación</span><small data-i18n="mutateHint">Introduce variación</small></a></li>
-          <li><span class="cycle-label cycle-final-label"><span data-i18n="evaluateAnd">Evaluación y </span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="survive">reemplazo</a></span><small data-i18n="surviveHint">Evalúa hijos y elige supervivientes</small></li>
+          <li><span class="cycle-label cycle-final-label"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga" data-i18n="evaluateAnd">Evaluación y </a><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="survive">reemplazo</a></span><small data-i18n="surviveHint">Evalúa hijos y elige supervivientes</small></li>
         </ol>
-        <p class="cycle-footnote"><span aria-hidden="true">↻</span><span data-i18n="replacementNote">La herramienta de selección explica tanto la elección de padres como el reemplazo: quién pasa a la siguiente generación.</span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="replacementLink">Ver selección y reemplazo →</a></p>
+        <p class="cycle-footnote"><span aria-hidden="true">↻</span><span data-i18n="replacementNote">La evaluación se repite después de crear los hijos. La herramienta de selección también explica quién sobrevive.</span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="replacementLink">Ver selección y reemplazo →</a></p>
       </section>
 
       <section class="lab-section" aria-labelledby="lab-title">
@@ -129,12 +153,23 @@
       </section>
 
       <section class="learning-section" aria-labelledby="learning-title">
-        <div class="learning-intro"><p class="eyebrow" data-i18n="learningEyebrow">En clase o por tu cuenta</p><h2 id="learning-title" data-i18n="learningTitle">Aprende haciendo.</h2><p data-i18n="learningLead">Las herramientas de selección, cruce y mutación comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.</p></div>
+        <div class="learning-intro"><p class="eyebrow" data-i18n="learningEyebrow">En clase o por tu cuenta</p><h2 id="learning-title" data-i18n="learningTitle">Aprende haciendo.</h2><p data-i18n="learningLead">Los cinco módulos comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.</p></div>
         <div class="learning-grid">
           <div class="learning-item"><span class="feature-icon" aria-hidden="true">▷</span><div><h3 data-i18n="animateTitle">Sigue cada paso</h3><p data-i18n="animateDesc">Animaciones con explicación, pseudocódigo y código en Python y JavaScript.</p></div></div>
           <div class="learning-item"><span class="feature-icon" aria-hidden="true">✎</span><div><h3 data-i18n="practiceTitle">Predice el resultado</h3><p data-i18n="practiceDesc">Resuelve el ejemplo y comprueba tu respuesta en el modo de práctica.</p></div></div>
           <div class="learning-item"><span class="feature-icon" aria-hidden="true">⇄</span><div><h3 data-i18n="compareTitle">Compara alternativas</h3><p data-i18n="compareDesc">Aplica distintos mecanismos u operadores a los mismos datos.</p></div></div>
-          <div class="learning-item"><span class="feature-icon" aria-hidden="true">↓</span><div><h3 data-i18n="moodleTitle">Llévalo a Moodle</h3><p data-i18n="moodleDesc">Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.</p><div class="moodle-links"><a href="https://josemagalan.github.io/selection-ga/#page=moodle&amp;lang=es" data-tool="selection-ga" data-page="moodle" data-i18n="selectionTitle">Selección</a><a href="https://josemagalan.github.io/crossover-ga/#page=moodle&amp;lang=es" data-tool="crossover-ga" data-page="moodle" data-i18n="crossoverTitle">Cruce</a><a href="https://josemagalan.github.io/mutation-ga/#page=moodle&amp;lang=es" data-tool="mutation-ga" data-page="moodle" data-i18n="mutationTitle">Mutación</a></div></div></div>
+          <div class="learning-item"><span class="feature-icon" aria-hidden="true">↓</span><div><h3 data-i18n="moodleTitle">Llévalo a Moodle</h3><p data-i18n="moodleDesc">Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.</p><div class="moodle-links"><a href="https://josemagalan.github.io/representation-ga/#page=moodle&amp;lang=es" data-tool="representation-ga" data-page="moodle" data-i18n="representationTitle">Representación</a><a href="https://josemagalan.github.io/selection-ga/#page=moodle&amp;lang=es" data-tool="selection-ga" data-page="moodle" data-i18n="selectionTitle">Selección</a><a href="https://josemagalan.github.io/crossover-ga/#page=moodle&amp;lang=es" data-tool="crossover-ga" data-page="moodle" data-i18n="crossoverTitle">Cruce</a><a href="https://josemagalan.github.io/mutation-ga/#page=moodle&amp;lang=es" data-tool="mutation-ga" data-page="moodle" data-i18n="mutationTitle">Mutación</a></div></div></div>
+        </div>
+      </section>
+
+      <section id="manual" class="manual-section" aria-labelledby="manual-title">
+        <div class="manual-visual" aria-hidden="true"><span class="book-cover">GA</span><span class="book-pages"></span></div>
+        <div class="manual-copy">
+          <p class="eyebrow" data-i18n="manualEyebrow">Manual de aprendizaje · En construcción</p>
+          <h2 id="manual-title" data-i18n="manualTitle">Del concepto al experimento.</h2>
+          <p data-i18n="manualLead">Un recorrido práctico para aprender y usar algoritmos genéticos con los materiales del laboratorio. Combina explicaciones, ejemplos reproducibles, actividades en las herramientas y ejercicios.</p>
+          <p class="manual-topics" data-i18n="manualTopics">Explicaciones · Ejemplos reproducibles · Actividades · Ejercicios</p>
+          <div class="manual-actions"><a class="btn primary" href="https://josemagalan.github.io/genetic-algorithms-lab-book/"><span data-i18n="openManual">Leer el manual</span><span aria-hidden="true">↗</span></a><a class="repo-link" href="https://github.com/josemagalan/genetic-algorithms-lab-book" aria-label="Código del manual en GitHub" data-i18n-aria="manualCode">GitHub ↗</a></div>
         </div>
       </section>
 
@@ -159,9 +194,9 @@
       </section>
 
       <section id="about" class="about-section" aria-labelledby="about-title">
-        <div><p class="eyebrow" data-i18n="aboutEyebrow">Herramientas docentes abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Este portal reúne materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada herramienta en su repositorio.</p></div>
+        <div><p class="eyebrow" data-i18n="aboutEyebrow">Herramientas docentes abiertas</p><h2 id="about-title" data-i18n="aboutTitle">Para enseñar y aprender.</h2><p class="about-lead" data-i18n="aboutLead">Este portal reúne cinco módulos interactivos, dos simuladores y un manual para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada recurso en su repositorio.</p></div>
         <div class="credits">
-          <p class="credits-scope" data-i18n="creditsScope">Equipo de la serie de operadores y SelectionMechanisms</p>
+          <p class="credits-scope" data-i18n="creditsScope">Equipo del laboratorio de algoritmos genéticos y SelectionMechanisms</p>
           <p class="authors"><a href="https://sites.google.com/site/josemagalan/">José Manuel Galán</a><sup>1</sup> · <a href="https://produccioncientifica.usal.es/investigadores/2300823/detalle?lang=en_US">Silvia Díaz-de la Fuente</a><sup>2</sup> · <a href="https://investigacion.ubu.es/investigadores/34947/detalle">Virginia Ahedo</a><sup>1</sup> · <a href="https://portalcientifico.upm.es/es/ipublic/researcher/331932">María Pereda</a><sup>3</sup> · <a href="https://investigacion.ubu.es/investigadores/35543/detalle">José Ignacio Santos</a><sup>1</sup></p>
           <p class="credits-links" data-i18n="creditsLinks">Los nombres enlazan a páginas personales o perfiles académicos.</p>
           <p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p>

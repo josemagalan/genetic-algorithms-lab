@@ -3,7 +3,7 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const { messages, tools, resolveLanguage, toolHref } = require('../js/content.js');
+const { messages, tools, moodleTools, resolveLanguage, toolHref } = require('../js/content.js');
 const root = path.resolve(__dirname, '..');
 const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
 
@@ -25,31 +25,38 @@ test('a shared URL wins over saved preferences; invalid values use a supported f
   assert.equal(resolveLanguage('', null, null), 'es');
 });
 
-test('all application and Moodle destinations preserve the selected language', () => {
+test('all module destinations preserve the selected language', () => {
   for (const tool of tools) {
     for (const lang of ['es', 'en']) {
-      for (const page of [undefined, 'moodle']) {
-        const url = new URL(toolHref(tool, lang, page));
-        assert.equal(url.origin, 'https://josemagalan.github.io');
-        assert.equal(url.pathname, '/' + tool + '/');
-        const hash = new URLSearchParams(url.hash.slice(1));
-        assert.equal(hash.get('lang'), lang);
-        assert.equal(hash.get('page'), page || null);
-      }
+      const url = new URL(toolHref(tool, lang));
+      assert.equal(url.origin, 'https://josemagalan.github.io');
+      assert.equal(url.pathname, '/' + tool + '/');
+      assert.equal(new URLSearchParams(url.hash.slice(1)).get('lang'), lang);
+    }
+  }
+  for (const tool of moodleTools) {
+    for (const lang of ['es', 'en']) {
+      const url = new URL(toolHref(tool, lang, 'moodle'));
+      const hash = new URLSearchParams(url.hash.slice(1));
+      assert.equal(hash.get('lang'), lang);
+      assert.equal(hash.get('page'), 'moodle');
     }
   }
   assert.throws(() => toolHref('unknown', 'es'));
   assert.throws(() => toolHref('selection-ga', 'fr'));
   assert.throws(() => toolHref('selection-ga', 'es', 'unknown'));
+  assert.throws(() => toolHref('initialization-and-evaluation-ga', 'es', 'moodle'));
 });
 
 test('the page remains navigable with JavaScript disabled and uses existing destinations', () => {
   for (const tool of tools) {
     assert.ok(html.includes('href="https://josemagalan.github.io/' + tool + '/#lang=es"'));
     assert.ok(html.includes('href="https://github.com/josemagalan/' + tool + '"'));
+  }
+  for (const tool of moodleTools) {
     assert.ok(html.includes('href="https://josemagalan.github.io/' + tool + '/#page=moodle&amp;lang=es"'));
   }
-  assert.equal((html.match(/class="tool-card /g) || []).length, 3);
+  assert.equal((html.match(/class="tool-card /g) || []).length, 5);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
   assert.equal(ids.length, new Set(ids).size);
   for (const match of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(match[1]), match[1]);
@@ -71,6 +78,16 @@ test('EvoTraveller and Shiny keep their canonical app and source URLs in both la
   // These apps do not share the operator tools' language hash contract.
   assert.ok(!html.includes('streamlit.app/#lang='));
   assert.ok(!html.includes('shinyapps.io/SelectionMechanisms/#lang='));
+});
+
+test('the learning handbook has distinct reading and source destinations', () => {
+  assert.ok(html.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/"'));
+  assert.ok(html.includes('href="https://github.com/josemagalan/genetic-algorithms-lab-book"'));
+  assert.ok(html.includes('id="manual"'));
+  for (const language of ['es', 'en']) {
+    assert.ok(messages[language].manualEyebrow);
+    assert.ok(messages[language].manualLead);
+  }
 });
 
 test('published and accepted papers remain distinct; the accepted paper has no invented DOI or download', () => {

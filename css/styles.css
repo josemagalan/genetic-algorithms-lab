@@ -86,6 +86,7 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .section-note { font-size: .72rem; color: var(--muted); }
 .tool-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .tool-card { --tool-color: var(--blue); --tool-text: var(--blue-text); display: flex; flex-direction: column; padding: 22px; border: 1px solid var(--line); border-top: 3px solid var(--tool-color); background: var(--card); border-radius: 12px; }
+.tool-card.initialization { --tool-color: var(--green); --tool-text: var(--green-text); }
 .tool-card.crossover { --tool-color: var(--orange); --tool-text: var(--orange-text); }
 .tool-card.mutation { --tool-color: var(--green); --tool-text: var(--green-text); }
 .tool-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
@@ -103,6 +104,11 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .mini-chromosome { display: flex; gap: 3px; }
 .mini-chromosome b { display: grid; place-items: center; width: 23px; height: 27px; border-radius: 3px; background: var(--blue); color: var(--blue-ink); font: 550 .75rem ui-monospace, Consolas, monospace; }
 .mini-chromosome.orange b, .mini-chromosome.mixed b:nth-child(n+3) { background: var(--orange); color: #1c1c1f; }
+.representation-problem { display: grid; grid-template-columns: repeat(2, 27px); gap: 6px; align-items: center; justify-items: center; color: var(--blue-text); font-size: 1.05rem; }
+.representation-problem span:last-child { grid-column: 1 / -1; }
+.initial-population, .fitness-values { display: grid; gap: 5px; }
+.initial-population span { padding: 3px 7px; border: 1px solid var(--green); border-radius: 3px; color: var(--green-text); font: .67rem ui-monospace, Consolas, monospace; }
+.fitness-values i { display: grid; place-items: center; min-width: 24px; min-height: 24px; border-radius: 50%; background: var(--green); color: var(--green-ink); font: normal 600 .68rem ui-monospace, Consolas, monospace; }
 .tool-card h3 { margin: 0 0 10px; font-size: 1.6rem; font-weight: 700; letter-spacing: -.03em; }
 .tool-desc { font-size: .87rem; line-height: 1.65; margin: 0 0 16px; color: var(--muted); }
 .tool-topics { color: var(--tool-text); font-size: .69rem; line-height: 1.7; margin: auto 0 20px; }
@@ -114,6 +120,8 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .repo-link:hover { color: var(--ink); text-decoration: underline; }
 .repo-link svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.6; }
 .cycle-section { margin: 49px 0 0; }
+.cycle-prelude { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; margin: -4px 0 16px; color: var(--muted); font-size: .72rem; }
+.cycle-prelude strong { color: var(--ink); }
 .cycle { display: grid; grid-template-columns: .85fr 1fr 1fr 1fr 1.35fr; gap: 22px; list-style: none; padding: 0; margin: 0; }
 .cycle li { position: relative; border: 1px solid var(--line); border-radius: 7px; padding: 14px 10px; text-align: center; }
 .cycle li:not(:last-child)::after { content: "→"; position: absolute; right: -19px; top: calc(50% - 12px); color: var(--muted); font-size: .9rem; }
@@ -123,6 +131,7 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .cycle-label { display: block; font-size: .75rem; font-weight: 650; }
 .cycle small { display: block; font-size: .63rem; color: var(--muted); margin-top: 4px; }
 .cycle-selection .cycle-label { color: var(--blue-text); }
+.cycle-evaluation .cycle-label { color: var(--green-text); }
 .cycle-crossover .cycle-label { color: var(--orange-text); }
 .cycle-mutation .cycle-label { color: var(--green-text); }
 .cycle-footnote { display: flex; align-items: baseline; gap: 8px; color: var(--muted); font-size: .7rem; margin: 13px 0 0; }
@@ -178,6 +187,15 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .learning-item h3 { font-size: .82rem; margin: 0 0 5px; font-weight: 650; }
 .learning-item p { color: var(--muted); font-size: .73rem; line-height: 1.6; margin: 0; }
 .moodle-links { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 8px; font-size: .67rem; }
+.manual-section { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 38px; align-items: center; margin-top: 36px; padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+.manual-visual { position: relative; width: 136px; height: 116px; margin: 0 auto; }
+.book-cover { position: absolute; inset: 5px 22px 5px 12px; display: grid; place-items: center; border-radius: 4px 10px 10px 4px; background: var(--blue); color: var(--blue-ink); font: 750 1.7rem ui-monospace, Consolas, monospace; box-shadow: inset 7px 0 0 rgba(0, 0, 0, .12); transform: rotate(-3deg); z-index: 1; }
+.book-pages { position: absolute; inset: 12px 13px 0 29px; border: 1px solid var(--line); border-radius: 2px 8px 8px 2px; background: var(--bg); transform: rotate(4deg); }
+.manual-copy .eyebrow { margin-bottom: 8px; color: var(--orange-text); }
+.manual-copy h2 { margin: 0 0 10px; font-size: 1.55rem; letter-spacing: -.025em; }
+.manual-copy > p:not(.eyebrow):not(.manual-topics) { max-width: 70ch; margin: 0 0 12px; color: var(--muted); font-size: .84rem; line-height: 1.65; }
+.manual-topics { margin: 0 0 16px; color: var(--blue-text); font-size: .72rem; }
+.manual-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
 .about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding: 36px 0 22px; }
 .about-lead { color: var(--muted); font-size: .8rem; line-height: 1.7; max-width: 50ch; margin: 0; }
 .authors { font-size: .78rem; line-height: 1.85; font-weight: 550; margin: 0 0 8px; }
@@ -267,6 +285,8 @@ sup { font-size: .6em; padding-left: 2px; }
   .learning-item p { font-size: .8rem; }
   .learning-item h3 { font-size: .9rem; }
   .moodle-links { font-size: .75rem; }
+  .manual-section { grid-template-columns: 1fr; gap: 18px; padding: 24px 20px; }
+  .manual-visual { width: 118px; height: 94px; }
   .about-section { grid-template-columns: 1fr; gap: 20px; padding-top: 28px; }
   .about-lead, .authors { font-size: .83rem; }
   .institution-logos { display: grid; grid-template-columns: 1fr 1fr; justify-items: center; gap: 23px; }
@@ -333,6 +353,8 @@ sup { font-size: .6em; padding-left: 2px; }
   .lab-card h3 { font-size: 13pt; }
   .learning-section { margin-top: 28px; padding-block: 24px; }
   .about-section { padding-top: 24px; }
+  .manual-section { grid-template-columns: 110px minmax(0, 1fr); gap: 18px; padding: 16px; break-inside: avoid; }
+  .manual-visual { width: 100px; height: 82px; }
   .cycle-section, .learning-section, .about-section, .institution-logos { break-inside: avoid; }
   .lab-card, .publication, .learning-item { break-inside: avoid; }
 }

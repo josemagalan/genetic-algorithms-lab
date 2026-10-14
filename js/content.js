@@ -3,14 +3,22 @@
   const messages = {
     es: {
       docTitle: 'Algoritmos genéticos, paso a paso · Herramientas docentes',
-      description: 'Laboratorio docente de algoritmos genéticos: selección, cruce, mutación, EvoTraveller y SelectionMechanisms. Herramientas interactivas y publicaciones científicas.',
+      description: 'Laboratorio docente de algoritmos genéticos: representación, inicialización, evaluación, selección, cruce y mutación, con simuladores, manual y publicaciones.',
       skip: 'Ir a las herramientas', homeLabel: 'GA · Inicio', brand: 'Herramientas docentes', aboutNav: 'Sobre el proyecto',
       eyebrow: 'Explora · Practica · Compara', titleLine1: 'Algoritmos genéticos,', titleLine2: 'paso a paso.',
-      lead: 'De una población de soluciones a la siguiente. Descubre cómo se eligen los padres, se combina su información y se introduce diversidad.',
+      lead: 'Desde cómo se representa una solución hasta cómo evoluciona una población. Aprende cada decisión con módulos interactivos, simuladores y un manual práctico.',
       choose: 'Elige una herramienta', parents: 'Padres', oneGeneration: 'Una generación', crossAndMutate: 'Cruce + mutación',
       parentA: 'Padre A', parentB: 'Padre B', changedGene: 'Gen mutado',
       heroVisual: 'Dos cromosomas parentales combinan sus genes; una mutación cambia un gen del descendiente.',
-      toolsTitle: 'Tres operadores. Un mismo proceso.', toolsNote: 'Abiertas · Interactivas · ES / EN',
+      toolsTitle: 'Cinco módulos. Un mismo proceso.', toolsNote: 'Abiertos · Interactivos · ES / EN',
+      representationQuestion: '¿Cómo se escribe una solución?', representationTitle: 'Representación',
+      representationDesc: 'Convierte un problema en cromosomas. Compara seis codificaciones para mochila, asignación, viajante y funciones continuas.',
+      representationTopics: 'Binaria · Entera · Permutaciones · Real',
+      representationVisual: 'Una solución se traduce entre el problema, un cromosoma y su forma decodificada.', representationCode: 'Código de representación en GitHub',
+      initializationQuestion: '¿Cómo empieza y se mide?', initializationTitle: 'Inicialización y evaluación',
+      initializationDesc: 'Crea la población inicial y calcula la aptitud. Compara diversidad, factibilidad, coste y paisajes de aptitud.',
+      initializationTopics: 'Poblaciones · Aptitud · Restricciones · Ruido',
+      initializationVisual: 'Una población inicial de cromosomas recibe valores de aptitud distintos.', initializationCode: 'Código de inicialización y evaluación en GitHub',
       selectionQuestion: '¿Quién se reproduce?', selectionTitle: 'Selección',
       selectionDesc: 'Elige los padres de la siguiente generación. Explora el equilibrio entre aptitud, presión selectiva y diversidad.',
       selectionTopics: 'Ruleta · SUS · Ranking · Torneo · Reemplazo',
@@ -23,6 +31,7 @@
       mutationDesc: 'Introduce cambios aleatorios en una solución. Explora cómo la representación y el tamaño del cambio afectan a la búsqueda.',
       mutationTopics: 'Binaria · Entera · Real · Permutaciones',
       mutationVisual: 'La mutación transforma el tercer bit de 1 a 0 y mantiene el resto.', mutationCode: 'Código de mutación en GitHub',
+      openRepresentation: 'Abrir representación', openInitialization: 'Abrir inicialización y evaluación',
       openSelection: 'Abrir selección', openCrossover: 'Abrir cruce', openMutation: 'Abrir mutación',
       openTraveller: 'Abrir EvoTraveller', openShiny: 'Abrir SelectionMechanisms',
       languageLabel: 'Idioma del portal', cycleTitle: 'Así encajan en el algoritmo', cycleNote: 'El ciclo se repite en cada generación',
@@ -36,32 +45,44 @@
       relatedPaper: 'Publicación relacionada ↓', publicationsNav: 'Publicaciones', publicationsTitle: 'Publicaciones relacionadas', publicationsNote: 'La investigación detrás de las herramientas',
       publishedStatus: 'Publicado · 2025', viewPublished: 'Ver publicación en Springer', acceptedStatus: 'Aceptado · Pendiente de publicación',
       acceptedVenue: 'CIO 2026 · Aceptado para publicación en Springer Lecture Notes.', acceptedNote: 'La referencia editorial y el enlace a la publicación se añadirán cuando estén disponibles.',
-      creditsScope: 'Equipo de la serie de operadores y SelectionMechanisms',
+      creditsScope: 'Equipo del laboratorio de algoritmos genéticos y SelectionMechanisms',
       creditsLinks: 'Los nombres enlazan a páginas personales o perfiles académicos.',
       evaluate: 'Evaluación', evaluateHint: 'Mide la aptitud', selectHint: 'Elige los padres', crossHint: 'Combina los genes', mutateHint: 'Introduce variación',
+      beforeCycle: 'Antes del ciclo:', representFirst: 'representa el problema', initializeFirst: 'crea y evalúa la población inicial',
       evaluateAnd: 'Evaluación y ', survive: 'reemplazo', surviveHint: 'Evalúa hijos y elige supervivientes',
-      replacementNote: 'La herramienta de selección explica tanto la elección de padres como el reemplazo: quién pasa a la siguiente generación.', replacementLink: 'Ver selección y reemplazo →',
+      replacementNote: 'La evaluación se repite después de crear los hijos. La herramienta de selección también explica quién sobrevive.', replacementLink: 'Ver selección y reemplazo →',
       learningEyebrow: 'En clase o por tu cuenta', learningTitle: 'Aprende haciendo.',
-      learningLead: 'Las herramientas de selección, cruce y mutación comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.',
+      learningLead: 'Los cinco módulos comparten la misma forma de trabajar. Elige un ejemplo y sigue cada decisión del algoritmo.',
       animateTitle: 'Sigue cada paso', animateDesc: 'Animaciones con explicación, pseudocódigo y código en Python y JavaScript.',
       practiceTitle: 'Predice el resultado', practiceDesc: 'Resuelve el ejemplo y comprueba tu respuesta en el modo de práctica.',
       compareTitle: 'Compara alternativas', compareDesc: 'Aplica distintos mecanismos u operadores a los mismos datos.',
       moodleTitle: 'Llévalo a Moodle', moodleDesc: 'Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.',
+      manualNav: 'Manual', manualEyebrow: 'Manual de aprendizaje · En construcción', manualTitle: 'Del concepto al experimento.',
+      manualLead: 'Un recorrido práctico para aprender y usar algoritmos genéticos con los materiales del laboratorio. Combina explicaciones, ejemplos reproducibles, actividades en las herramientas y ejercicios.',
+      manualTopics: 'Explicaciones · Ejemplos reproducibles · Actividades · Ejercicios', openManual: 'Leer el manual', manualCode: 'Código del manual en GitHub',
       aboutEyebrow: 'Herramientas docentes abiertas', aboutTitle: 'Para enseñar y aprender.',
-      aboutLead: 'Este portal reúne materiales para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada herramienta en su repositorio.',
+      aboutLead: 'Este portal reúne cinco módulos interactivos, dos simuladores y un manual para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada recurso en su repositorio.',
       licenses: 'Portal: código MIT · Contenido docente CC BY 4.0', institutions: 'Instituciones participantes',
       footerText: 'Algoritmos genéticos · Herramientas docentes abiertas', backTop: 'Volver arriba',
     },
     en: {
       docTitle: 'Genetic algorithms, step by step · Teaching tools',
-      description: 'Genetic algorithm teaching lab: selection, crossover, mutation, EvoTraveller and SelectionMechanisms. Interactive tools and scientific publications.',
+      description: 'Genetic algorithm teaching lab: representation, initialisation, evaluation, selection, crossover and mutation, with simulators, a handbook and publications.',
       skip: 'Skip to the tools', homeLabel: 'GA · Home', brand: 'Teaching tools', aboutNav: 'About the project',
       eyebrow: 'Explore · Practise · Compare', titleLine1: 'Genetic algorithms,', titleLine2: 'step by step.',
-      lead: 'From one population of solutions to the next. Discover how parents are selected, their information is combined and diversity is introduced.',
+      lead: 'From representing a solution to evolving a population. Learn every decision through interactive modules, simulators and a practical handbook.',
       choose: 'Choose a tool', parents: 'Parents', oneGeneration: 'One generation', crossAndMutate: 'Crossover + mutation',
       parentA: 'Parent A', parentB: 'Parent B', changedGene: 'Mutated gene',
       heroVisual: 'Two parent chromosomes combine their genes; a mutation changes one gene in the offspring.',
-      toolsTitle: 'Three operators. One shared process.', toolsNote: 'Open · Interactive · ES / EN',
+      toolsTitle: 'Five modules. One shared process.', toolsNote: 'Open · Interactive · ES / EN',
+      representationQuestion: 'How is a solution written?', representationTitle: 'Representation',
+      representationDesc: 'Turn a problem into chromosomes. Compare six encodings for knapsack, assignment, travelling salesman and continuous functions.',
+      representationTopics: 'Binary · Integer · Permutations · Real-valued',
+      representationVisual: 'A solution is translated between the problem, a chromosome and its decoded form.', representationCode: 'Representation source code on GitHub',
+      initializationQuestion: 'How does it start and get measured?', initializationTitle: 'Initialisation and evaluation',
+      initializationDesc: 'Create the initial population and calculate fitness. Compare diversity, feasibility, cost and fitness landscapes.',
+      initializationTopics: 'Populations · Fitness · Constraints · Noise',
+      initializationVisual: 'An initial population of chromosomes receives different fitness values.', initializationCode: 'Initialisation and evaluation source code on GitHub',
       selectionQuestion: 'Who reproduces?', selectionTitle: 'Selection',
       selectionDesc: 'Choose the parents of the next generation. Explore the balance between fitness, selection pressure and diversity.',
       selectionTopics: 'Roulette · SUS · Ranking · Tournament · Replacement',
@@ -74,6 +95,7 @@
       mutationDesc: 'Introduce random changes into a solution. Explore how the representation and the size of the change affect the search.',
       mutationTopics: 'Binary · Integer · Real-valued · Permutations',
       mutationVisual: 'Mutation changes the third bit from 1 to 0 and preserves the others.', mutationCode: 'Mutation source code on GitHub',
+      openRepresentation: 'Open representation', openInitialization: 'Open initialisation and evaluation',
       openSelection: 'Open selection', openCrossover: 'Open crossover', openMutation: 'Open mutation',
       openTraveller: 'Open EvoTraveller', openShiny: 'Open SelectionMechanisms',
       languageLabel: 'Portal language', cycleTitle: 'How they fit into the algorithm', cycleNote: 'The cycle repeats in each generation',
@@ -87,24 +109,29 @@
       relatedPaper: 'Related publication ↓', publicationsNav: 'Publications', publicationsTitle: 'Related publications', publicationsNote: 'The research behind the tools',
       publishedStatus: 'Published · 2025', viewPublished: 'View publication on Springer', acceptedStatus: 'Accepted · Awaiting publication',
       acceptedVenue: 'CIO 2026 · Accepted for publication in Springer Lecture Notes.', acceptedNote: 'The final bibliographic reference and publication link will be added when available.',
-      creditsScope: 'Operator series and SelectionMechanisms team',
+      creditsScope: 'Genetic algorithms lab and SelectionMechanisms team',
       creditsLinks: 'Names link to personal websites or academic profiles.',
       evaluate: 'Evaluation', evaluateHint: 'Measure fitness', selectHint: 'Choose the parents', crossHint: 'Combine the genes', mutateHint: 'Introduce variation',
+      beforeCycle: 'Before the cycle:', representFirst: 'represent the problem', initializeFirst: 'create and evaluate the initial population',
       evaluateAnd: 'Evaluation & ', survive: 'replacement', surviveHint: 'Evaluate offspring and choose survivors',
-      replacementNote: 'The selection tool covers both parent selection and replacement: who enters the next generation.', replacementLink: 'View selection and replacement →',
+      replacementNote: 'Evaluation repeats after offspring are created. The selection tool also explains who survives.', replacementLink: 'View selection and replacement →',
       learningEyebrow: 'In class or on your own', learningTitle: 'Learn by doing.',
-      learningLead: 'The selection, crossover and mutation tools work in the same way. Choose an example and follow each decision made by the algorithm.',
+      learningLead: 'The five modules work in the same way. Choose an example and follow each decision made by the algorithm.',
       animateTitle: 'Follow every step', animateDesc: 'Animations with explanations, pseudocode and Python and JavaScript code.',
       practiceTitle: 'Predict the result', practiceDesc: 'Solve the example and check your answer in practice mode.',
       compareTitle: 'Compare alternatives', compareDesc: 'Apply different mechanisms or operators to the same data.',
       moodleTitle: 'Take it to Moodle', moodleDesc: 'Question banks for teachers, with solutions linked to the example.',
+      manualNav: 'Handbook', manualEyebrow: 'Learning handbook · Work in progress', manualTitle: 'From concept to experiment.',
+      manualLead: 'A practical route for learning and using genetic algorithms with the lab materials. It combines explanations, reproducible examples, activities in the tools and exercises.',
+      manualTopics: 'Explanations · Reproducible examples · Activities · Exercises', openManual: 'Read the handbook', manualCode: 'Handbook source on GitHub',
       aboutEyebrow: 'Open teaching tools', aboutTitle: 'For teaching and learning.',
-      aboutLead: 'This portal brings together resources for courses on metaheuristics, evolutionary computation and industrial engineering. Find each tool’s authorship and licence in its repository.',
+      aboutLead: 'This portal brings together five interactive modules, two simulators and a handbook for courses on metaheuristics, evolutionary computation and industrial engineering. Find each resource’s authorship and licence in its repository.',
       licenses: 'Portal: code MIT · Teaching content CC BY 4.0', institutions: 'Participating institutions',
       footerText: 'Genetic algorithms · Open teaching tools', backTop: 'Back to top',
     },
   };
-  const tools = ['selection-ga', 'crossover-ga', 'mutation-ga'];
+  const tools = ['representation-ga', 'initialization-and-evaluation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
+  const moodleTools = ['representation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
   function resolveLanguage(search, storedLanguage, browserLanguage) {
     const requested = new URLSearchParams(search).get('lang');
     if (requested === 'es' || requested === 'en') return requested;
@@ -114,13 +141,13 @@
   function toolHref(tool, language, page) {
     if (!tools.includes(tool)) throw new Error('Unknown teaching tool');
     if (language !== 'es' && language !== 'en') throw new Error('Unsupported language');
-    if (page && page !== 'moodle') throw new Error('Unknown tool page');
+    if (page && (page !== 'moodle' || !moodleTools.includes(tool))) throw new Error('Unknown tool page');
     const hash = new URLSearchParams();
     if (page) hash.set('page', page);
     hash.set('lang', language);
     return 'https://josemagalan.github.io/' + tool + '/#' + hash;
   }
-  const portal = { messages, tools, resolveLanguage, toolHref };
+  const portal = { messages, tools, moodleTools, resolveLanguage, toolHref };
   if (typeof module !== 'undefined' && module.exports) module.exports = portal;
   else root.GAPortal = portal;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

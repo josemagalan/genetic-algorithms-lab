@@ -1,22 +1,25 @@
 # Genetic algorithms, step by step / Algoritmos genéticos, paso a paso
 
-A bilingual, static portal for genetic algorithm teaching tools, their source repositories and related scientific publications.
+A bilingual, static portal for genetic algorithm teaching modules, simulators, a learning handbook, their source repositories and related scientific publications.
 
 [Open the portal / Abrir el portal](https://josemagalan.github.io/genetic-algorithms-lab/)
 
-Portal estático bilingüe que reúne cinco herramientas docentes. La autoría y la licencia de cada herramienta se indican en sus repositorios y publicaciones:
+Portal estático bilingüe que reúne cinco módulos interactivos, dos simuladores y un manual de aprendizaje. La autoría y la licencia de cada recurso se indican en sus repositorios y publicaciones:
 
 | Tool / Herramienta | Application / Aplicación | Source / Código |
 | --- | --- | --- |
+| Representation / Representación | [representation-ga](https://josemagalan.github.io/representation-ga/) | [GitHub](https://github.com/josemagalan/representation-ga) |
+| Initialisation and evaluation / Inicialización y evaluación | [initialization-and-evaluation-ga](https://josemagalan.github.io/initialization-and-evaluation-ga/) | [GitHub](https://github.com/josemagalan/initialization-and-evaluation-ga) |
 | Selection / Selección | [selection-ga](https://josemagalan.github.io/selection-ga/) | [GitHub](https://github.com/josemagalan/selection-ga) |
 | Crossover / Cruce | [crossover-ga](https://josemagalan.github.io/crossover-ga/) | [GitHub](https://github.com/josemagalan/crossover-ga) |
 | Mutation / Mutación | [mutation-ga](https://josemagalan.github.io/mutation-ga/) | [GitHub](https://github.com/josemagalan/mutation-ga) |
 | EvoTraveller | [Streamlit application / Aplicación](https://evotraveller.streamlit.app/) | [GitHub](https://github.com/jismartin/evotraveller) |
 | SelectionMechanisms | [Shiny application / Aplicación](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
+| Learning handbook / Manual de aprendizaje | [Read / Leer](https://josemagalan.github.io/genetic-algorithms-lab-book/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab-book) |
 
-La serie de operadores enseña cada decisión paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad a lo largo de generaciones.
+La serie interactiva cubre representación, inicialización, evaluación, selección, cruce y mutación paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad. El manual, todavía en construcción, organiza estos materiales en un itinerario con explicaciones, actividades y ejercicios.
 
-The operator series explains each decision step by step. EvoTraveller shows a complete algorithm applied to the travelling salesman problem. SelectionMechanisms compares selection, convergence and diversity dynamics across generations.
+The interactive series covers representation, initialisation, evaluation, selection, crossover and mutation step by step. EvoTraveller shows a complete algorithm applied to the travelling salesman problem. SelectionMechanisms compares selection, convergence and diversity dynamics. The handbook, still a work in progress, organises these materials into a route with explanations, activities and exercises.
 
 ## Publicaciones / Publications
 
@@ -48,7 +51,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 - Español: `?lang=es`. English: `?lang=en`.
 - El idioma de la URL tiene prioridad; después se usa la elección guardada y el idioma del navegador.
 - The URL language takes priority, followed by the saved choice and browser language.
-- Los enlaces a la serie de operadores y bancos Moodle conservan el idioma. EvoTraveller y Shiny conservan sus direcciones oficiales. / Operator and Moodle links preserve the language. EvoTraveller and Shiny use their official URLs.
+- Los enlaces a los cinco módulos y sus bancos Moodle disponibles conservan el idioma. EvoTraveller, Shiny y el manual conservan sus direcciones oficiales. / Module links and available Moodle banks preserve the language. EvoTraveller, Shiny and the handbook use their official URLs.
 - Modo claro/oscuro según el sistema. / Light and dark appearance follows the system preference.
 
 ## Pruebas / Tests
@@ -76,13 +79,13 @@ Para publicar una copia / To publish a fork:
 3. Conserva `.nojekyll` y las rutas relativas de CSS, JavaScript e imágenes. / Keep `.nojekyll` and relative asset paths.
 4. Usa la dirección de tu copia para los enlaces de vuelta. / Use your fork's published URL for return links.
 
-Selección, cruce y mutación incluyen un enlace global de vuelta al portal que conserva el idioma. Sus README también enlazan al portal.
+Los cinco módulos incluyen un enlace global de vuelta al portal que conserva el idioma. Sus README también enlazan al portal.
 
-Selection, crossover and mutation include a global return link that preserves the language. Their README files also link to this portal.
+All five modules include a global return link that preserves the language. Their README files also link to this portal.
 
 ## Créditos y licencias / Credits and licenses
 
-- Operator series and SelectionMechanisms authors / Autores de la serie de operadores y SelectionMechanisms: José Manuel Galán¹, Silvia Díaz-de la Fuente², Virginia Ahedo¹, María Pereda³, José Ignacio Santos¹.
+- Genetic algorithms lab and SelectionMechanisms authors / Autores del laboratorio de algoritmos genéticos y SelectionMechanisms: José Manuel Galán¹, Silvia Díaz-de la Fuente², Virginia Ahedo¹, María Pereda³, José Ignacio Santos¹.
 - EvoTraveller publication authors / Autores de la publicación de EvoTraveller: José Ignacio Santos, Virginia Ahedo, María Pereda, José Manuel Galán.
 - ¹ Universidad de Burgos · ² Universidad de Salamanca · ³ Universidad Politécnica de Madrid.
 - Research group / Grupo de investigación: Los Goonies.
