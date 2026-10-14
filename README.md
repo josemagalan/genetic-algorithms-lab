@@ -6,16 +6,25 @@ A bilingual, static portal for genetic algorithm teaching modules, simulators, a
 
 Portal estático bilingüe que reúne cinco módulos interactivos, dos simuladores y un manual de aprendizaje. La autoría y la licencia de cada recurso se indican en sus repositorios y publicaciones:
 
-| Tool / Herramienta | Application / Aplicación | Source / Código |
+<!-- ga-series-links:start -->
+## Teaching resources / Materiales docentes
+
+[Portal en español](https://josemagalan.github.io/genetic-algorithms-lab/?lang=es) · [Portal in English](https://josemagalan.github.io/genetic-algorithms-lab/?lang=en)
+
+| Resource / Recurso | Use or read / Usar o leer | Repository / Repositorio |
 | --- | --- | --- |
-| Representation / Representación | [representation-ga](https://josemagalan.github.io/representation-ga/) | [GitHub](https://github.com/josemagalan/representation-ga) |
-| Initialisation and evaluation / Inicialización y evaluación | [initialization-and-evaluation-ga](https://josemagalan.github.io/initialization-and-evaluation-ga/) | [GitHub](https://github.com/josemagalan/initialization-and-evaluation-ga) |
-| Selection / Selección | [selection-ga](https://josemagalan.github.io/selection-ga/) | [GitHub](https://github.com/josemagalan/selection-ga) |
-| Crossover / Cruce | [crossover-ga](https://josemagalan.github.io/crossover-ga/) | [GitHub](https://github.com/josemagalan/crossover-ga) |
-| Mutation / Mutación | [mutation-ga](https://josemagalan.github.io/mutation-ga/) | [GitHub](https://github.com/josemagalan/mutation-ga) |
-| EvoTraveller | [Streamlit application / Aplicación](https://evotraveller.streamlit.app/) | [GitHub](https://github.com/jismartin/evotraveller) |
-| SelectionMechanisms | [Shiny application / Aplicación](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
+| Portal / Índice de materiales | [Open / Abrir](https://josemagalan.github.io/genetic-algorithms-lab/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab) |
+| Representation / Representación | [Open / Abrir](https://josemagalan.github.io/representation-ga/) | [GitHub](https://github.com/josemagalan/representation-ga) |
+| Initialisation and evaluation / Inicialización y evaluación | [Open / Abrir](https://josemagalan.github.io/initialization-and-evaluation-ga/) | [GitHub](https://github.com/josemagalan/initialization-and-evaluation-ga) |
+| Selection / Selección | [Open / Abrir](https://josemagalan.github.io/selection-ga/) | [GitHub](https://github.com/josemagalan/selection-ga) |
+| Crossover / Cruce | [Open / Abrir](https://josemagalan.github.io/crossover-ga/) | [GitHub](https://github.com/josemagalan/crossover-ga) |
+| Mutation / Mutación | [Open / Abrir](https://josemagalan.github.io/mutation-ga/) | [GitHub](https://github.com/josemagalan/mutation-ga) |
+| EvoTraveller | [Open / Abrir](https://evotraveller.streamlit.app/) | [GitHub](https://github.com/jismartin/evotraveller) |
+| SelectionMechanisms | [Open / Abrir](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
 | Learning handbook / Manual de aprendizaje | [Read / Leer](https://josemagalan.github.io/genetic-algorithms-lab-book/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab-book) |
+
+El manual está en construcción: su contenido y estructura pueden cambiar. / The handbook is a work in progress: its content and structure may change.
+<!-- ga-series-links:end -->
 
 La serie interactiva cubre representación, inicialización, evaluación, selección, cruce y mutación paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad. El manual, todavía en construcción, organiza estos materiales en un itinerario con explicaciones, actividades y ejercicios.
 
