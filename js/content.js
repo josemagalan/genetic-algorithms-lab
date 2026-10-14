@@ -135,7 +135,7 @@
     },
   };
   const tools = ['representation-ga', 'initialization-and-evaluation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
-  const moodleTools = ['representation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
+  const moodleTools = ['representation-ga', 'initialization-and-evaluation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
   function resolveLanguage(search, storedLanguage, browserLanguage) {
     const requested = new URLSearchParams(search).get('lang');
     if (requested === 'es' || requested === 'en') return requested;

@@ -45,7 +45,8 @@ test('all module destinations preserve the selected language', () => {
   assert.throws(() => toolHref('unknown', 'es'));
   assert.throws(() => toolHref('selection-ga', 'fr'));
   assert.throws(() => toolHref('selection-ga', 'es', 'unknown'));
-  assert.throws(() => toolHref('initialization-and-evaluation-ga', 'es', 'moodle'));
+  // Las cinco herramientas tienen bancos de preguntas para Moodle
+  assert.deepEqual(moodleTools, tools);
 });
 
 test('the page remains navigable with JavaScript disabled and uses existing destinations', () => {
