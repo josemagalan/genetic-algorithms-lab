@@ -7,8 +7,8 @@
   <meta name="theme-color" content="#f5f4f0">
   <title>Algoritmos genéticos, paso a paso · Herramientas docentes</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css?v=7">
-  <script src="js/content.js?v=5" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=8">
+  <script src="js/content.js?v=6" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -110,17 +110,30 @@
         </div>
       </section>
 
-      <section class="cycle-section" aria-labelledby="cycle-title">
+      <section id="algorithm" class="cycle-section" aria-labelledby="cycle-title">
         <div class="section-heading"><h2 id="cycle-title" data-i18n="cycleTitle">Así encajan en el algoritmo</h2><span class="section-note" data-i18n="cycleNote">El ciclo se repite en cada generación</span></div>
-        <p class="cycle-prelude"><strong data-i18n="beforeCycle">Antes del ciclo:</strong> <a href="https://josemagalan.github.io/representation-ga/#lang=es" data-tool="representation-ga" data-i18n="representFirst">representa el problema</a><span aria-hidden="true">→</span><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga" data-i18n="initializeFirst">crea y evalúa la población inicial</a>.</p>
-        <ol class="cycle">
-          <li class="cycle-evaluation"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="evaluate">Evaluación</span><small data-i18n="evaluateHint">Mide la aptitud</small></a></li>
-          <li class="cycle-selection"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="selectionTitle">Selección</span><small data-i18n="selectHint">Elige los padres</small></a></li>
-          <li class="cycle-crossover"><a href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span class="cycle-label" data-i18n="crossoverTitle">Cruce</span><small data-i18n="crossHint">Combina los genes</small></a></li>
-          <li class="cycle-mutation"><a href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span class="cycle-label" data-i18n="mutationTitle">Mutación</span><small data-i18n="mutateHint">Introduce variación</small></a></li>
-          <li><span class="cycle-label cycle-final-label"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga" data-i18n="evaluateAnd">Evaluación y </a><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="survive">reemplazo</a></span><small data-i18n="surviveHint">Evalúa hijos y elige supervivientes</small></li>
-        </ol>
-        <p class="cycle-footnote"><span aria-hidden="true">↻</span><span data-i18n="replacementNote">La evaluación se repite después de crear los hijos. La herramienta de selección también explica quién sobrevive.</span><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga" data-i18n="replacementLink">Ver selección y reemplazo →</a></p>
+        <div class="algorithm-preparation">
+          <h3 class="flow-heading" data-i18n="beforeCycle">Antes del ciclo · Una sola vez</h3>
+          <ol class="preparation-flow" role="list">
+            <li><a href="https://josemagalan.github.io/representation-ga/#lang=es" data-tool="representation-ga"><span class="cycle-label" data-i18n="representFirst">Representar el problema</span><small data-i18n="representHint">Define los cromosomas</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+            <li><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="initializeFirst">Crear la población inicial</span><small data-i18n="initializeHint">Genera las primeras soluciones</small></a></li>
+          </ol>
+          <p class="flow-entry"><span aria-hidden="true">↓</span> <span data-i18n="enterCycle">La población inicial entra en el ciclo</span></p>
+        </div>
+        <div class="generation-flow">
+          <h3 class="flow-heading" data-i18n="generationHeading">En cada generación</h3>
+          <div class="cycle-diagram">
+            <ol class="cycle" role="list" aria-describedby="cycle-return cycle-note">
+              <li class="cycle-evaluation"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="evaluate">Evaluar</span><small data-i18n="evaluateHint">Mide la aptitud</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-selection"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="selectAction">Seleccionar</span><small data-i18n="selectHint">Elige los padres</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-crossover"><a href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span class="cycle-label" data-i18n="crossAction">Cruzar</span><small data-i18n="crossHint">Combina los genes</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-mutation"><a href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span class="cycle-label" data-i18n="mutateAction">Mutar</span><small data-i18n="mutateHint">Introduce variación</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-replacement"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="replaceAction">Reemplazar</span><small data-i18n="surviveHint">Forma la siguiente población</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+            </ol>
+            <p id="cycle-return" class="cycle-return" data-i18n="cycleReturn">Reemplazar → volver a evaluar, hasta cumplir el criterio de parada.</p>
+          </div>
+        </div>
+        <p id="cycle-note" class="cycle-footnote" data-i18n="replacementNote">Seleccionar elige los padres; reemplazar determina quién pasa a la siguiente población. En el reemplazo generacional, los hijos se evalúan al volver a «Evaluar». Si el reemplazo compara la aptitud de padres e hijos, hay que evaluar los hijos antes de reemplazar.</p>
       </section>
 
       <section class="lab-section" aria-labelledby="lab-title">
