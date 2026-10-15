@@ -210,7 +210,8 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .book-pages { position: absolute; inset: 12px 13px 0 29px; border: 1px solid var(--line); border-radius: 2px 8px 8px 2px; background: var(--bg); transform: rotate(4deg); }
 .manual-copy .eyebrow { margin-bottom: 8px; color: var(--orange-text); }
 .manual-copy h2 { margin: 0 0 10px; font-size: 1.55rem; letter-spacing: -.025em; }
-.manual-copy > p:not(.eyebrow):not(.manual-topics) { max-width: 70ch; margin: 0 0 12px; color: var(--muted); font-size: .84rem; line-height: 1.65; }
+.manual-copy > p:not(.eyebrow):not(.manual-topics):not(.manual-subtitle) { max-width: 70ch; margin: 0 0 12px; color: var(--muted); font-size: .84rem; line-height: 1.65; }
+.manual-copy .manual-subtitle { margin: -4px 0 12px; color: var(--ink); font-size: .95rem; font-style: italic; }
 .manual-topics { margin: 0 0 16px; color: var(--blue-text); font-size: .72rem; }
 .manual-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; }
 .about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; padding: 36px 0 22px; }

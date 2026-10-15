@@ -81,10 +81,12 @@ test('EvoTraveller and Shiny keep their canonical app and source URLs in both la
   assert.ok(!html.includes('shinyapps.io/SelectionMechanisms/#lang='));
 });
 
-test('the learning handbook has distinct reading and source destinations', () => {
+test('the book has distinct reading and source destinations', () => {
   assert.ok(html.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/"'));
   assert.ok(html.includes('href="https://github.com/josemagalan/genetic-algorithms-lab-book"'));
   assert.ok(html.includes('id="manual"'));
+  assert.ok(html.includes('<h2 id="manual-title" lang="es">Evolución a la vista</h2>'));
+  assert.ok(html.includes('Algoritmos genéticos en un laboratorio interactivo'));
   for (const language of ['es', 'en']) {
     assert.ok(messages[language].manualEyebrow);
     assert.ok(messages[language].manualLead);
