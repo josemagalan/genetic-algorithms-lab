@@ -60,7 +60,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 - Español: `?lang=es`. English: `?lang=en`.
 - El idioma de la URL tiene prioridad; después se usa la elección guardada y el idioma del navegador.
 - The URL language takes priority, followed by the saved choice and browser language.
-- Los pasos del ciclo con pantalla propia la abren directamente: crear la población inicial (`item=uniform`), evaluar (`item=pipeline`) y reemplazar (`op=elitism`); también los pasos de «Empezar desde cero». Las pantallas admitidas están en `screens` (`js/content.js`). / Cycle steps with their own screen open it directly; allowed screens are listed in `screens`.
+- Los pasos del ciclo con pantalla propia la abren directamente: crear la población inicial (`item=uniform`), evaluar (`item=pipeline`) y reemplazar (`op=elitism`); Las pantallas admitidas están en `screens` (`js/content.js`). / Cycle steps with their own screen open it directly; allowed screens are listed in `screens`.
 - Los enlaces a los cinco módulos y sus bancos Moodle disponibles conservan el idioma. EvoTraveller, Shiny y el libro conservan sus direcciones oficiales. / Module links and available Moodle banks preserve the language. EvoTraveller, Shiny and the book use their official URLs.
 - Modo claro/oscuro según el sistema. / Light and dark appearance follows the system preference.
 
@@ -70,7 +70,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 npm test
 ```
 
-Comprueban traducciones y nombres accesibles, prioridad del idioma, enlaces a aplicaciones, pantallas concretas y Moodle, la entrada «Empezar desde cero», el alcance de las licencias, la vía de comentarios, navegación sin JavaScript, archivos locales y ausencia de recursos CDN.
+Comprueban traducciones y nombres accesibles, prioridad del idioma, enlaces a aplicaciones, pantallas concretas y Moodle, el enlace al libro de la portada, el alcance de las licencias, la vía de comentarios, navegación sin JavaScript, archivos locales y ausencia de recursos CDN.
 
 Checks cover translations and accessible labels, language precedence, application and Moodle destinations, navigation without JavaScript, local assets and the absence of CDN resources.
 

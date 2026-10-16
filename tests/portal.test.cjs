@@ -126,14 +126,15 @@ test('cycle steps with their own screen open it, in both languages (beta review,
   }
 });
 
-test('beginners have a start-from-scratch entry with a suggested sequence (beta review, M05)', () => {
-  assert.ok(html.includes('href="#start"'));
-  const section = html.match(/<section id="start"[\s\S]*?<\/section>/)[0];
-  assert.equal((section.match(/<li>/g) || []).length, 5);
-  for (const page of ['01-evolucion.html', '02-ciclo.html', '05-seleccion.html#sec-seleccion-torneo',
-    '06-cruce.html#sec-cruce-uno-y-dos-puntos', '09-experimentos.html#sec-experimentos-azar']) {
-    assert.ok(section.includes('https://josemagalan.github.io/genetic-algorithms-lab-book/' + page), page);
+test('beginners are sent to the book from the hero (beta review, M05)', () => {
+  const hero = html.match(/<div class="hero-links">[\s\S]*?<\/p>/)[0];
+  assert.ok(hero.includes('href="#tools"'));
+  assert.ok(hero.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/"'));
+  for (const language of ['es', 'en']) {
+    assert.ok(messages[language].bookLinkHero);
+    assert.ok(messages[language].bookHintHero);
   }
+  assert.ok(!html.includes('id="start"'));
 });
 
 test('license scope and beta feedback are explicit (beta review, M03, M04, M06)', () => {
