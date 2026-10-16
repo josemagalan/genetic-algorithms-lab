@@ -59,12 +59,21 @@
       practiceTitle: 'Predice el resultado', practiceDesc: 'Resuelve el ejemplo y comprueba tu respuesta en el modo de práctica.',
       compareTitle: 'Compara alternativas', compareDesc: 'Aplica distintos mecanismos u operadores a los mismos datos.',
       moodleTitle: 'Llévalo a Moodle', moodleDesc: 'Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.',
-      manualNav: 'Libro', manualEyebrow: 'El libro · En construcción',
+      startLinkHero: 'Empezar desde cero', startTitle: 'Empezar desde cero', startNote: 'Primera sesión · unos 90 minutos (orientativo)',
+      startLead: 'No hace falta saber nada de algoritmos genéticos ni programar: basta con probabilidades sencillas y medias. Sigue este orden y lee solo las secciones marcadas «Básico» del libro.',
+      start1Title: 'La idea', start1Desc: 'Evolución y optimización: qué problema resuelve un algoritmo genético.', start1Link: 'Libro, capítulo 1',
+      start2Title: 'El ciclo', start2Desc: 'Una generación completa, hecha a mano paso a paso.', start2Link: 'Libro, capítulo 2',
+      start3Title: 'Seleccionar', start3Desc: 'Torneo y ruleta con cuatro individuos.', start3Tool: 'Abrir selection-ga', start3Link: 'Libro, secciones 5.2 y 5.3',
+      start4Title: 'Cruzar y mutar', start4Desc: 'Cruce en un punto e inversión de bits.', start4Tool: 'Abrir crossover-ga', start4Tool2: 'Abrir mutation-ga', start4Link: 'Libro, secciones 6.2 y 7.2',
+      start5Title: 'El algoritmo completo', start5Desc: 'Una ejecución de EvoTraveller y qué cambia con otra semilla.', start5Tool: 'Abrir EvoTraveller', start5Link: 'Libro, sección 9.1',
+      feedbackText: 'Es una versión beta. ¿Has visto un error o tienes una sugerencia?', feedbackPortal: 'Coméntalo en GitHub', feedbackBook: 'sobre el libro',
+      feedbackAuthors: 'sin GitHub, escribe a los autores desde sus páginas, enlazadas arriba.',
+      manualNav: 'Libro', manualEyebrow: 'El libro · Versión beta 0.9',
       manualLead: 'Un recorrido práctico para aprender y usar algoritmos genéticos con los materiales del laboratorio. Combina explicaciones, ejemplos reproducibles, actividades en las herramientas y ejercicios.',
       manualTopics: 'Explicaciones · Ejemplos reproducibles · Actividades · Ejercicios', openManual: 'Leer el libro', manualCode: 'Código del libro en GitHub',
       aboutEyebrow: 'Herramientas docentes abiertas', aboutTitle: 'Para enseñar y aprender.',
       aboutLead: 'Este portal reúne cinco módulos interactivos, dos simuladores y un libro para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada recurso en su repositorio.',
-      licenses: 'Portal: código MIT · Contenido docente CC BY 4.0', institutions: 'Instituciones participantes',
+      licenses: 'Este portal: código MIT · contenido docente CC BY 4.0. El libro: CC BY 4.0. Cada herramienta indica su licencia en su repositorio.', institutions: 'Instituciones participantes',
       footerText: 'Laboratorio de algoritmos genéticos · Herramientas docentes abiertas', backTop: 'Volver arriba',
     },
     en: {
@@ -125,12 +134,21 @@
       practiceTitle: 'Predict the result', practiceDesc: 'Solve the example and check your answer in practice mode.',
       compareTitle: 'Compare alternatives', compareDesc: 'Apply different mechanisms or operators to the same data.',
       moodleTitle: 'Take it to Moodle', moodleDesc: 'Question banks for teachers, with solutions linked to the example.',
-      manualNav: 'Book', manualEyebrow: 'The book · In Spanish · Work in progress',
+      startLinkHero: 'Start from scratch', startTitle: 'Start from scratch', startNote: 'First session · about 90 minutes (approximate)',
+      startLead: 'No prior knowledge of genetic algorithms or programming is needed: simple probabilities and averages are enough. Follow this order and read only the sections marked “Básico” (basic) in the book, which is in Spanish.',
+      start1Title: 'The idea', start1Desc: 'Evolution and optimisation: what problem a genetic algorithm solves.', start1Link: 'Book, chapter 1',
+      start2Title: 'The cycle', start2Desc: 'One complete generation, worked by hand step by step.', start2Link: 'Book, chapter 2',
+      start3Title: 'Select', start3Desc: 'Tournament and roulette wheel with four individuals.', start3Tool: 'Open selection-ga', start3Link: 'Book, sections 5.2 and 5.3',
+      start4Title: 'Cross over and mutate', start4Desc: 'One-point crossover and bit-flip mutation.', start4Tool: 'Open crossover-ga', start4Tool2: 'Open mutation-ga', start4Link: 'Book, sections 6.2 and 7.2',
+      start5Title: 'The whole algorithm', start5Desc: 'One EvoTraveller run and what changes with another seed.', start5Tool: 'Open EvoTraveller', start5Link: 'Book, section 9.1',
+      feedbackText: 'This is a beta version. Found a mistake or have a suggestion?', feedbackPortal: 'Tell us on GitHub', feedbackBook: 'about the book',
+      feedbackAuthors: 'without GitHub, write to the authors through their pages, linked above.',
+      manualNav: 'Book', manualEyebrow: 'The book · In Spanish · Beta 0.9',
       manualLead: 'A practical route for learning and using genetic algorithms with the lab materials. It combines explanations, reproducible examples, activities in the tools and exercises.',
       manualTopics: 'Explanations · Reproducible examples · Activities · Exercises', openManual: 'Read the book', manualCode: 'Book source on GitHub',
       aboutEyebrow: 'Open teaching tools', aboutTitle: 'For teaching and learning.',
       aboutLead: 'This portal brings together five interactive modules, two simulators and a book for courses on metaheuristics, evolutionary computation and industrial engineering. Find each resource’s authorship and licence in its repository.',
-      licenses: 'Portal: code MIT · Teaching content CC BY 4.0', institutions: 'Participating institutions',
+      licenses: 'This portal: code MIT · teaching content CC BY 4.0. The book: CC BY 4.0. Each tool states its own licence in its repository.', institutions: 'Participating institutions',
       footerText: 'Genetic Algorithms Lab · Open teaching tools', backTop: 'Back to top',
     },
   };
@@ -142,16 +160,29 @@
     if (storedLanguage === 'es' || storedLanguage === 'en') return storedLanguage;
     return String(browserLanguage || '').toLowerCase().startsWith('en') ? 'en' : 'es';
   }
-  function toolHref(tool, language, page) {
+  // Pantallas concretas que enlaza el portal (el ciclo y «Empezar desde cero»): parámetro → valores admitidos.
+  const screens = {
+    'initialization-and-evaluation-ga': { item: ['uniform', 'pipeline'] },
+    'selection-ga': { op: ['tournament', 'elitism'] },
+    'crossover-ga': { op: ['one-point'] },
+    'mutation-ga': { op: ['bit-flip'] },
+  };
+  function toolHref(tool, language, page, screen) {
     if (!tools.includes(tool)) throw new Error('Unknown teaching tool');
     if (language !== 'es' && language !== 'en') throw new Error('Unsupported language');
     if (page && (page !== 'moodle' || !moodleTools.includes(tool))) throw new Error('Unknown tool page');
     const hash = new URLSearchParams();
     if (page) hash.set('page', page);
+    if (screen) {
+      for (const [key, value] of new URLSearchParams(screen)) {
+        if (!(screens[tool] && screens[tool][key] && screens[tool][key].includes(value))) throw new Error('Unknown tool screen');
+        hash.set(key, value);
+      }
+    }
     hash.set('lang', language);
     return 'https://josemagalan.github.io/' + tool + '/#' + hash;
   }
-  const portal = { messages, tools, moodleTools, resolveLanguage, toolHref };
+  const portal = { messages, tools, moodleTools, screens, resolveLanguage, toolHref };
   if (typeof module !== 'undefined' && module.exports) module.exports = portal;
   else root.GAPortal = portal;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

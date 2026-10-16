@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Comentario sobre el libro / Book feedback
+    url: https://github.com/josemagalan/genetic-algorithms-lab-book/issues/new?template=comentario.yml
+    about: Formulario del libro «Evolución a la vista». / Form for the book.
+  - name: Escribir a los autores sin GitHub / Write to the authors without GitHub
+    url: https://josemagalan.github.io/genetic-algorithms-lab/?lang=es#about
+    about: Las páginas de los autores están enlazadas en «Sobre el proyecto». / Author pages are linked in “About the project”.

@@ -23,7 +23,7 @@ Portal estático bilingüe que reúne cinco módulos interactivos, dos simulador
 | SelectionMechanisms | [Open / Abrir](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
 | Book / Libro: *Evolución a la vista* | [Read / Leer](https://josemagalan.github.io/genetic-algorithms-lab-book/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab-book) |
 
-El libro está en construcción: su contenido y estructura pueden cambiar. / The book, in Spanish, is a work in progress: its content and structure may change.
+El libro está en versión beta: su contenido y estructura pueden cambiar. / The book, in Spanish, is in beta: its content and structure may change.
 <!-- ga-series-links:end -->
 
 La serie interactiva cubre representación, inicialización, evaluación, selección, cruce y mutación paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad. El libro *Evolución a la vista*, todavía en construcción, organiza estos materiales en un itinerario con explicaciones, actividades y ejercicios.
@@ -60,6 +60,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 - Español: `?lang=es`. English: `?lang=en`.
 - El idioma de la URL tiene prioridad; después se usa la elección guardada y el idioma del navegador.
 - The URL language takes priority, followed by the saved choice and browser language.
+- Los pasos del ciclo con pantalla propia la abren directamente: crear la población inicial (`item=uniform`), evaluar (`item=pipeline`) y reemplazar (`op=elitism`); también los pasos de «Empezar desde cero». Las pantallas admitidas están en `screens` (`js/content.js`). / Cycle steps with their own screen open it directly; allowed screens are listed in `screens`.
 - Los enlaces a los cinco módulos y sus bancos Moodle disponibles conservan el idioma. EvoTraveller, Shiny y el libro conservan sus direcciones oficiales. / Module links and available Moodle banks preserve the language. EvoTraveller, Shiny and the book use their official URLs.
 - Modo claro/oscuro según el sistema. / Light and dark appearance follows the system preference.
 
@@ -69,7 +70,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 npm test
 ```
 
-Comprueban traducciones y nombres accesibles, prioridad del idioma, enlaces a aplicaciones y Moodle, navegación sin JavaScript, archivos locales y ausencia de recursos CDN.
+Comprueban traducciones y nombres accesibles, prioridad del idioma, enlaces a aplicaciones, pantallas concretas y Moodle, la entrada «Empezar desde cero», el alcance de las licencias, la vía de comentarios, navegación sin JavaScript, archivos locales y ausencia de recursos CDN.
 
 Checks cover translations and accessible labels, language precedence, application and Moodle destinations, navigation without JavaScript, local assets and the absence of CDN resources.
 
@@ -92,6 +93,10 @@ Los cinco módulos incluyen un enlace global de vuelta al portal que conserva el
 
 All five modules include a global return link that preserves the language. Their README files also link to this portal.
 
+## Comentarios / Feedback
+
+El portal y el libro están en versión beta. Los comentarios sobre el portal van a los *issues* de este repositorio (plantillas: errata, enlace o resultado distinto, problema de uso, sugerencia); los del libro, a su formulario («Enviar un comentario sobre esta página» en cada página). Quien no use GitHub puede escribir a los autores a través de sus páginas, enlazadas en «Sobre el proyecto». / Portal feedback goes to this repository's issues; book feedback, to the book's form. Without GitHub, write to the authors through their pages.
+
 ## Créditos y licencias / Credits and licenses
 
 - Genetic algorithms lab and SelectionMechanisms authors / Autores del laboratorio de algoritmos genéticos y SelectionMechanisms: José Manuel Galán¹, Silvia Díaz-de la Fuente², Virginia Ahedo¹, María Pereda³, José Ignacio Santos¹.
@@ -100,4 +105,5 @@ All five modules include a global return link that preserves the language. Their
 - Research group / Grupo de investigación: Los Goonies.
 - Code / Código: [MIT](LICENSE).
 - Teaching content / Contenido docente: [CC BY 4.0](LICENSE-CONTENT.md).
+- Estas licencias son las del portal y no se extienden a los recursos enlazados: el libro tiene licencia CC BY 4.0 para el texto y MIT para el código, y cada herramienta indica la suya en su repositorio. / These licenses cover the portal only; the book (CC BY 4.0 text, MIT code) and each tool state their own.
 - Los logotipos se reutilizan de `crossover-ga/img/logos/` y conservan los derechos de sus respectivas instituciones. / Logos are reused from `crossover-ga/img/logos/` and remain subject to their institutions' rights.

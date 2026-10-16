@@ -16,7 +16,7 @@
       button.disabled = false;
       button.setAttribute('aria-pressed', String(button.dataset.lang === language));
     });
-    document.querySelectorAll('[data-tool]').forEach((link) => { link.href = toolHref(link.dataset.tool, language, link.dataset.page); });
+    document.querySelectorAll('[data-tool]').forEach((link) => { link.href = toolHref(link.dataset.tool, language, link.dataset.page, link.dataset.hash); });
     try { localStorage.setItem('ga-portal-language', language); }
     catch { /* The language also lives in the URL when storage is unavailable. */ }
   }

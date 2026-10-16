@@ -1,0 +1,27 @@
+name: Comentario sobre el portal / Portal feedback
+description: Una errata, un enlace que no funciona, un problema de uso o una sugerencia. / A typo, a broken link, a usability problem or a suggestion.
+labels: ["comentario"]
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo / Type
+      options:
+        - Errata o error en el texto / Typo or text error
+        - Enlace o herramienta que no abre lo esperado / Link or tool opens the wrong thing
+        - Problema de uso o de accesibilidad / Usability or accessibility problem
+        - Sugerencia / Suggestion
+    validations:
+      required: true
+  - type: input
+    id: idioma
+    attributes:
+      label: Idioma y dispositivo / Language and device
+      placeholder: ES, móvil / EN, desktop…
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Qué has visto / What happened
+      description: Si es sobre el libro, usa mejor su formulario. / For the book, please use its own form.
+    validations:
+      required: true

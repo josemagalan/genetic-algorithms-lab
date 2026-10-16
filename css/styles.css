@@ -65,6 +65,20 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .lead { font-size: 1.04rem; line-height: 1.65; color: var(--muted); margin: 20px 0; max-width: 50ch; }
 .hero-link { display: inline-flex; gap: 12px; align-items: center; font-size: .85rem; font-weight: 650; text-decoration: none; padding: 4px 0; }
 .hero-link:hover { text-decoration: underline; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 6px 26px; }
+/* Empezar desde cero (revisión beta, M05) */
+.start-section { margin: 0 0 40px; }
+.start-lead { max-width: 75ch; margin: -6px 0 16px; color: var(--muted); font-size: .8rem; line-height: 1.6; }
+.start-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; counter-reset: paso; }
+.start-steps > li { counter-increment: paso; display: flex; flex-direction: column; gap: 6px; padding: 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
+.start-steps h3 { margin: 0; font-size: .86rem; font-weight: 650; }
+.start-steps h3::before { content: counter(paso) ". "; color: var(--green-text); }
+.start-steps p { margin: 0 0 4px; color: var(--muted); font-size: .74rem; line-height: 1.55; }
+.start-steps a { font-size: .72rem; font-weight: 600; color: var(--blue-text); }
+.start-time { font-size: .65rem; font-weight: 650; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
+/* Comentarios sobre la beta (M06) */
+.feedback-note { color: var(--muted); font-size: .68rem; line-height: 1.6; margin: 8px 0 0; }
+.feedback-note a { color: var(--blue-text); }
 .hero-visual { padding: 24px 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); transform: rotate(-2deg); }
 .visual-label { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font-size: .72rem; margin: 0 0 16px; }
 .visual-caption { font-size: .64rem; letter-spacing: .04em; text-transform: uppercase; }
@@ -239,6 +253,7 @@ sup { font-size: .6em; padding-left: 2px; }
   .learning-section { gap: 35px; }
 }
 @media (max-width: 850px) {
+  .start-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero { grid-template-columns: 1.3fr 1fr; gap: 30px; }
   h1 { font-size: 2.25rem; }
   .hero-visual { padding: 20px; }
@@ -261,6 +276,9 @@ sup { font-size: .6em; padding-left: 2px; }
 }
 @media (max-width: 600px) {
   .wrap { padding: 20px 20px 22px; }
+  .start-steps { grid-template-columns: minmax(0, 1fr); }
+  .start-steps p, .start-lead { font-size: .82rem; }
+  .start-steps a { font-size: .8rem; }
   .topbar { padding-bottom: 17px; }
   .brand-text { font-size: .75rem; }
   .header-right { gap: 10px; }

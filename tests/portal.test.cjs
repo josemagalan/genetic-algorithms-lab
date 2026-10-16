@@ -108,3 +108,40 @@ test('published and accepted papers remain distinct; the accepted paper has no i
     assert.ok(messages[language].acceptedNote);
   }
 });
+
+test('cycle steps with their own screen open it, in both languages (beta review, M01)', () => {
+  assert.ok(html.includes('href="https://josemagalan.github.io/selection-ga/#op=elitism&amp;lang=es" data-tool="selection-ga" data-hash="op=elitism"'));
+  assert.ok(html.includes('href="https://josemagalan.github.io/initialization-and-evaluation-ga/#item=pipeline&amp;lang=es"'));
+  assert.ok(html.includes('href="https://josemagalan.github.io/initialization-and-evaluation-ga/#item=uniform&amp;lang=es"'));
+  for (const lang of ['es', 'en']) {
+    const hash = new URLSearchParams(new URL(toolHref('selection-ga', lang, undefined, 'op=elitism')).hash.slice(1));
+    assert.equal(hash.get('op'), 'elitism');
+    assert.equal(hash.get('lang'), lang);
+  }
+  assert.throws(() => toolHref('selection-ga', 'es', undefined, 'op=unknown'));
+  assert.throws(() => toolHref('crossover-ga', 'es', undefined, 'item=uniform'));
+  // Every data-hash in the page is an allowed screen
+  for (const match of html.matchAll(/data-tool="([^"]+)" data-hash="([^"]+)"/g)) {
+    assert.doesNotThrow(() => toolHref(match[1], 'en', undefined, match[2]), match[0]);
+  }
+});
+
+test('beginners have a start-from-scratch entry with a suggested sequence (beta review, M05)', () => {
+  assert.ok(html.includes('href="#start"'));
+  const section = html.match(/<section id="start"[\s\S]*?<\/section>/)[0];
+  assert.equal((section.match(/<li>/g) || []).length, 5);
+  for (const page of ['01-evolucion.html', '02-ciclo.html', '05-seleccion.html#sec-seleccion-torneo',
+    '06-cruce.html#sec-cruce-uno-y-dos-puntos', '09-experimentos.html#sec-experimentos-azar']) {
+    assert.ok(section.includes('https://josemagalan.github.io/genetic-algorithms-lab-book/' + page), page);
+  }
+});
+
+test('license scope and beta feedback are explicit (beta review, M03, M04, M06)', () => {
+  for (const language of ['es', 'en']) {
+    assert.match(messages[language].licenses, /CC BY 4\.0/);
+    assert.match(messages[language].manualEyebrow, /0\.9/);
+  }
+  assert.ok(html.includes('https://github.com/josemagalan/genetic-algorithms-lab/issues/new/choose'));
+  assert.ok(html.includes('https://github.com/josemagalan/genetic-algorithms-lab-book/issues/new?template=comentario.yml'));
+  assert.ok(!html.includes('mailto:'));
+});

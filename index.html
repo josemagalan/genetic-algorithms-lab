@@ -7,9 +7,9 @@
   <meta name="theme-color" content="#f5f4f0">
   <title>Laboratorio de algoritmos genéticos · Herramientas docentes</title>
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/styles.css?v=9">
-  <script src="js/content.js?v=8" defer></script>
-  <script src="js/app.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css?v=10">
+  <script src="js/content.js?v=9" defer></script>
+  <script src="js/app.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#tools" data-i18n="skip">Ir a las herramientas</a>
@@ -36,7 +36,7 @@
           <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">Explora · Practica · Compara</span></p>
           <h1 id="hero-title"><span data-i18n="titleLine1">Laboratorio de</span><br><span class="title-accent" data-i18n="titleLine2">algoritmos genéticos.</span></h1>
           <p class="lead" data-i18n="lead">Desde cómo se representa una solución hasta cómo evoluciona una población. Aprende cada decisión con módulos interactivos, simuladores y un libro práctico.</p>
-          <a class="hero-link" href="#tools"><span data-i18n="choose">Elige una herramienta</span><span aria-hidden="true">↓</span></a>
+          <div class="hero-links"><a class="hero-link" href="#tools"><span data-i18n="choose">Elige una herramienta</span><span aria-hidden="true">↓</span></a><a class="hero-link" href="#start"><span data-i18n="startLinkHero">Empezar desde cero</span><span aria-hidden="true">↓</span></a></div>
         </div>
         <div class="hero-visual" role="img" aria-label="Dos cromosomas parentales combinan sus genes; una mutación cambia un gen del descendiente." data-i18n-aria="heroVisual">
           <div class="visual-label"><span data-i18n="parents">Padres</span><span class="visual-caption" data-i18n="oneGeneration">Una generación</span></div>
@@ -46,6 +46,18 @@
           <div class="chromosome offspring" aria-hidden="true"><b>1</b><b>0</b><b>1</b><b class="from-b">0</b><b class="mutated">0<span class="mutation-dot"></span></b><b class="from-b">0</b></div>
           <div class="visual-legend"><span><i class="legend-dot blue"></i><span data-i18n="parentA">Padre A</span></span><span><i class="legend-dot orange"></i><span data-i18n="parentB">Padre B</span></span><span><i class="legend-dot green"></i><span data-i18n="changedGene">Gen mutado</span></span></div>
         </div>
+      </section>
+
+      <section id="start" class="start-section" aria-labelledby="start-title">
+        <div class="section-heading"><h2 id="start-title" data-i18n="startTitle">Empezar desde cero</h2><span class="section-note" data-i18n="startNote">Primera sesión · unos 90 minutos (orientativo)</span></div>
+        <p class="start-lead" data-i18n="startLead">No hace falta saber nada de algoritmos genéticos ni programar: basta con probabilidades sencillas y medias. Sigue este orden y lee solo las secciones marcadas «Básico» del libro.</p>
+        <ol class="start-steps" role="list">
+          <li><span class="start-time">15 min</span><h3 data-i18n="start1Title">La idea</h3><p data-i18n="start1Desc">Evolución y optimización: qué problema resuelve un algoritmo genético.</p><a href="https://josemagalan.github.io/genetic-algorithms-lab-book/01-evolucion.html" data-i18n="start1Link">Libro, capítulo 1</a></li>
+          <li><span class="start-time">20 min</span><h3 data-i18n="start2Title">El ciclo</h3><p data-i18n="start2Desc">Una generación completa, hecha a mano paso a paso.</p><a href="https://josemagalan.github.io/genetic-algorithms-lab-book/02-ciclo.html" data-i18n="start2Link">Libro, capítulo 2</a></li>
+          <li><span class="start-time">20 min</span><h3 data-i18n="start3Title">Seleccionar</h3><p data-i18n="start3Desc">Torneo y ruleta con cuatro individuos.</p><a href="https://josemagalan.github.io/selection-ga/#op=tournament&amp;lang=es" data-tool="selection-ga" data-hash="op=tournament" data-i18n="start3Tool">Abrir selection-ga</a><a href="https://josemagalan.github.io/genetic-algorithms-lab-book/05-seleccion.html#sec-seleccion-torneo" data-i18n="start3Link">Libro, secciones 5.2 y 5.3</a></li>
+          <li><span class="start-time">20 min</span><h3 data-i18n="start4Title">Cruzar y mutar</h3><p data-i18n="start4Desc">Cruce en un punto e inversión de bits.</p><a href="https://josemagalan.github.io/crossover-ga/#op=one-point&amp;lang=es" data-tool="crossover-ga" data-hash="op=one-point" data-i18n="start4Tool">Abrir crossover-ga</a><a href="https://josemagalan.github.io/mutation-ga/#op=bit-flip&amp;lang=es" data-tool="mutation-ga" data-hash="op=bit-flip" data-i18n="start4Tool2">Abrir mutation-ga</a><a href="https://josemagalan.github.io/genetic-algorithms-lab-book/06-cruce.html#sec-cruce-uno-y-dos-puntos" data-i18n="start4Link">Libro, secciones 6.2 y 7.2</a></li>
+          <li><span class="start-time">15 min</span><h3 data-i18n="start5Title">El algoritmo completo</h3><p data-i18n="start5Desc">Una ejecución de EvoTraveller y qué cambia con otra semilla.</p><a href="https://evotraveller.streamlit.app/" data-i18n="start5Tool">Abrir EvoTraveller</a><a href="https://josemagalan.github.io/genetic-algorithms-lab-book/09-experimentos.html#sec-experimentos-azar" data-i18n="start5Link">Libro, sección 9.1</a></li>
+        </ol>
       </section>
 
       <section id="tools" class="tools-section" aria-labelledby="tools-title">
@@ -116,7 +128,7 @@
           <h3 class="flow-heading" data-i18n="beforeCycle">Antes del ciclo · Una sola vez</h3>
           <ol class="preparation-flow" role="list">
             <li><a href="https://josemagalan.github.io/representation-ga/#lang=es" data-tool="representation-ga"><span class="cycle-label" data-i18n="representFirst">Representar el problema</span><small data-i18n="representHint">Define los cromosomas</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
-            <li><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="initializeFirst">Crear la población inicial</span><small data-i18n="initializeHint">Genera las primeras soluciones</small></a></li>
+            <li><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#item=uniform&amp;lang=es" data-tool="initialization-and-evaluation-ga" data-hash="item=uniform"><span class="cycle-label" data-i18n="initializeFirst">Crear la población inicial</span><small data-i18n="initializeHint">Genera las primeras soluciones</small></a></li>
           </ol>
           <p class="flow-entry"><span aria-hidden="true">↓</span> <span data-i18n="enterCycle">La población inicial entra en el ciclo</span></p>
         </div>
@@ -124,11 +136,11 @@
           <h3 class="flow-heading" data-i18n="generationHeading">En cada generación</h3>
           <div class="cycle-diagram">
             <ol class="cycle" role="list" aria-describedby="cycle-return cycle-note">
-              <li class="cycle-evaluation"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#lang=es" data-tool="initialization-and-evaluation-ga"><span class="cycle-label" data-i18n="evaluate">Evaluar</span><small data-i18n="evaluateHint">Mide la aptitud</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-evaluation"><a href="https://josemagalan.github.io/initialization-and-evaluation-ga/#item=pipeline&amp;lang=es" data-tool="initialization-and-evaluation-ga" data-hash="item=pipeline"><span class="cycle-label" data-i18n="evaluate">Evaluar</span><small data-i18n="evaluateHint">Mide la aptitud</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
               <li class="cycle-selection"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="selectAction">Seleccionar</span><small data-i18n="selectHint">Elige los padres</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
               <li class="cycle-crossover"><a href="https://josemagalan.github.io/crossover-ga/#lang=es" data-tool="crossover-ga"><span class="cycle-label" data-i18n="crossAction">Cruzar</span><small data-i18n="crossHint">Combina los genes</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
               <li class="cycle-mutation"><a href="https://josemagalan.github.io/mutation-ga/#lang=es" data-tool="mutation-ga"><span class="cycle-label" data-i18n="mutateAction">Mutar</span><small data-i18n="mutateHint">Introduce variación</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
-              <li class="cycle-replacement"><a href="https://josemagalan.github.io/selection-ga/#lang=es" data-tool="selection-ga"><span class="cycle-label" data-i18n="replaceAction">Reemplazar</span><small data-i18n="surviveHint">Forma la siguiente población</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
+              <li class="cycle-replacement"><a href="https://josemagalan.github.io/selection-ga/#op=elitism&amp;lang=es" data-tool="selection-ga" data-hash="op=elitism"><span class="cycle-label" data-i18n="replaceAction">Reemplazar</span><small data-i18n="surviveHint">Forma la siguiente población</small></a><span class="flow-arrow" aria-hidden="true"></span></li>
             </ol>
             <p id="cycle-return" class="cycle-return" data-i18n="cycleReturn">Reemplazar → volver a evaluar, hasta cumplir el criterio de parada.</p>
           </div>
@@ -178,7 +190,7 @@
       <section id="manual" class="manual-section" aria-labelledby="manual-title">
         <div class="manual-visual" aria-hidden="true"><span class="book-cover">GA</span><span class="book-pages"></span></div>
         <div class="manual-copy">
-          <p class="eyebrow" data-i18n="manualEyebrow">El libro · En construcción</p>
+          <p class="eyebrow" data-i18n="manualEyebrow">El libro · Versión beta 0.9</p>
           <h2 id="manual-title" lang="es">Evolución a la vista</h2>
           <p class="manual-subtitle" lang="es">Algoritmos genéticos en un laboratorio interactivo</p>
           <p data-i18n="manualLead">Un recorrido práctico para aprender y usar algoritmos genéticos con los materiales del laboratorio. Combina explicaciones, ejemplos reproducibles, actividades en las herramientas y ejercicios.</p>
@@ -214,7 +226,8 @@
           <p class="authors"><a href="https://sites.google.com/site/josemagalan/">José Manuel Galán</a><sup>1</sup> · <a href="https://produccioncientifica.usal.es/investigadores/2300823/detalle?lang=en_US">Silvia Díaz-de la Fuente</a><sup>2</sup> · <a href="https://investigacion.ubu.es/investigadores/34947/detalle">Virginia Ahedo</a><sup>1</sup> · <a href="https://portalcientifico.upm.es/es/ipublic/researcher/331932">María Pereda</a><sup>3</sup> · <a href="https://investigacion.ubu.es/investigadores/35543/detalle">José Ignacio Santos</a><sup>1</sup></p>
           <p class="credits-links" data-i18n="creditsLinks">Los nombres enlazan a páginas personales o perfiles académicos.</p>
           <p class="affiliations"><sup>1</sup> Universidad de Burgos<br><sup>2</sup> Universidad de Salamanca<br><sup>3</sup> Universidad Politécnica de Madrid</p>
-          <p class="license-note" data-i18n="licenses">Portal: código MIT · Contenido docente CC BY 4.0</p>
+          <p class="license-note" data-i18n="licenses">Este portal: código MIT · contenido docente CC BY 4.0. El libro: CC BY 4.0. Cada herramienta indica su licencia en su repositorio.</p>
+          <p class="feedback-note"><span data-i18n="feedbackText">Es una versión beta. ¿Has visto un error o tienes una sugerencia?</span> <a href="https://github.com/josemagalan/genetic-algorithms-lab/issues/new/choose" data-i18n="feedbackPortal">Coméntalo en GitHub</a> · <a href="https://github.com/josemagalan/genetic-algorithms-lab-book/issues/new?template=comentario.yml" data-i18n="feedbackBook">sobre el libro</a> · <span data-i18n="feedbackAuthors">sin GitHub, escribe a los autores desde sus páginas, enlazadas arriba.</span></p>
         </div>
       </section>
       <div class="institution-logos" aria-label="Instituciones participantes" data-i18n-aria="institutions"><img src="img/logos/ubu.png" alt="Universidad de Burgos" width="178" height="64" loading="lazy"><img src="img/logos/usal.png" alt="Universidad de Salamanca" width="178" height="64" loading="lazy"><img src="img/logos/upm.png" alt="Universidad Politécnica de Madrid" width="178" height="64" loading="lazy"><img src="img/logos/goonies.png" alt="Los Goonies" width="154" height="64" loading="lazy"></div>
