@@ -99,9 +99,12 @@ El portal y el libro están en versión beta. Los comentarios sobre el portal va
 
 ## Créditos y licencias / Credits and licenses
 
-- Genetic algorithms lab and SelectionMechanisms authors / Autores del laboratorio de algoritmos genéticos y SelectionMechanisms: José Manuel Galán¹, Silvia Díaz-de la Fuente², Virginia Ahedo¹, María Pereda³, José Ignacio Santos¹.
+- Genetic algorithms lab and SelectionMechanisms authors / Autores del laboratorio de algoritmos genéticos y SelectionMechanisms: José Manuel Galán¹\* ([ORCID 0000-0003-3360-7602](https://orcid.org/0000-0003-3360-7602)), Silvia Díaz-de la Fuente² ([ORCID 0000-0002-5961-3368](https://orcid.org/0000-0002-5961-3368)), Virginia Ahedo¹ ([ORCID 0000-0002-9812-388X](https://orcid.org/0000-0002-9812-388X)), María Pereda³ ⁴ ([ORCID 0000-0002-6151-1176](https://orcid.org/0000-0002-6151-1176)), José Ignacio Santos¹ ([ORCID 0000-0002-6653-043X](https://orcid.org/0000-0002-6653-043X)). \* Corresponding author / Autor de correspondencia.
 - EvoTraveller publication authors / Autores de la publicación de EvoTraveller: José Ignacio Santos, Virginia Ahedo, María Pereda, José Manuel Galán.
-- ¹ Universidad de Burgos · ² Universidad de Salamanca · ³ Universidad Politécnica de Madrid.
+- ¹ Departamento de Ingeniería de Organización, Escuela Politécnica Superior, Universidad de Burgos. Edificio A1, Avda. Cantabria s/n, 09006 Burgos, Spain.
+- ² Departamento de Cartografía e Ingeniería del Terreno, Escuela Politécnica Superior de Ávila, Universidad de Salamanca. Hornos Caleros 50, 05003 Ávila, Spain.
+- ³ Grupo de investigación Ingeniería de Organización y Logística (IOL), Escuela Técnica Superior de Ingenieros Industriales, Universidad Politécnica de Madrid. C/ José Gutiérrez Abascal 2, 28006 Madrid, Spain.
+- ⁴ Grupo Interdisciplinar de Sistemas Complejos, Madrid, Spain.
 - Research group / Grupo de investigación: Los Goonies.
 - Code / Código: [MIT](LICENSE).
 - Teaching content / Contenido docente: [CC BY 4.0](LICENSE-CONTENT.md).

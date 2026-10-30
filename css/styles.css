@@ -225,6 +225,9 @@ h1 { margin: 0; font-size: clamp(2.25rem, 4.3vw, 3.2rem); line-height: 1.12; fon
 .credits-links { color: var(--muted); font-size: .68rem; line-height: 1.6; margin: 0 0 12px; }
 sup { font-size: .6em; padding-left: 2px; }
 .affiliations { font-size: .68rem; color: var(--muted); line-height: 1.8; margin: 0; }
+.authors .author { white-space: nowrap; }
+.authors .orcid { display: inline-block; width: 1.5em; height: 1.5em; margin-left: 3px; border-radius: 50%; background: #a6ce39; color: #fff; font-size: .58rem; font-weight: 700; line-height: 1.5em; text-align: center; text-decoration: none; vertical-align: .15em; }
+.authors .orcid:hover, .authors .orcid:focus-visible { background: #8db82a; }
 .license-note { color: var(--muted); font-size: .65rem; margin: 12px 0 0; }
 .institution-logos { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px; padding: 23px 0 29px; }
 .institution-logos img { width: auto; max-width: 168px; height: 48px; object-fit: contain; }
