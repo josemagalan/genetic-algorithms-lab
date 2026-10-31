@@ -41,7 +41,11 @@ To cite the portal, see [CITATION.cff](CITATION.cff). A version DOI will be adde
 | SelectionMechanisms | [Open / Abrir](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
 | Book / Libro: *Evolución a la vista* | [Read / Leer](https://josemagalan.github.io/genetic-algorithms-lab-book/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab-book) |
 
-El libro está en español. / The book is in Spanish.
+[Español · original](https://josemagalan.github.io/genetic-algorithms-lab-book/) · [English · AI translation](https://josemagalan.github.io/genetic-algorithms-lab-book/en/).
+
+La edición inglesa, *Evolution Made Visible: Genetic Algorithms in an Interactive Laboratory*, es una traducción por IA de la edición española 1.0. La revisión humana completa está pendiente y el DOI citado identifica el original español. Ambas ediciones están accesibles desde las interfaces ES y EN del portal.
+
+The English edition, *Evolution Made Visible: Genetic Algorithms in an Interactive Laboratory*, is an AI-generated translation of Spanish edition 1.0. A complete human review is pending, and the cited DOI identifies the Spanish original. Both book editions are available from the ES and EN portal interfaces.
 <!-- ga-series-links:end -->
 
 La serie interactiva cubre representación, inicialización, evaluación, selección, cruce y mutación paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad. El libro *Evolución a la vista*, todavía en construcción, organiza estos materiales en un itinerario con explicaciones, actividades y ejercicios.

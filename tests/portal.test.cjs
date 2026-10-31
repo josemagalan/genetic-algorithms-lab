@@ -130,8 +130,16 @@ test('beginners are sent to the book from the hero (beta review, M05)', () => {
   const hero = html.match(/<div class="hero-links">[\s\S]*?<\/p>/)[0];
   assert.ok(hero.includes('href="#tools"'));
   assert.ok(hero.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/"'));
+  assert.ok(hero.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/en/"'));
+  const manual = html.match(/<section id="manual"[\s\S]*?<\/section>/)[0];
+  assert.ok(manual.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/"'));
+  assert.ok(manual.includes('href="https://josemagalan.github.io/genetic-algorithms-lab-book/en/"'));
   for (const language of ['es', 'en']) {
     assert.ok(messages[language].bookLinkHero);
+    assert.ok(messages[language].bookEnglishHero);
+    assert.ok(messages[language].openManualEnglish);
+    assert.match(messages[language].manualEditions, /IA|AI-generated/);
+    assert.match(messages[language].manualEditions, /pendiente|pending/);
     assert.ok(messages[language].bookHintHero);
   }
   assert.ok(!html.includes('id="start"'));
