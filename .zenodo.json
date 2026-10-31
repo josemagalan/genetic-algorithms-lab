@@ -1,0 +1,48 @@
+{
+  "title": "Genetic Algorithms Lab / Laboratorio de algoritmos genéticos",
+  "version": "1.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Galán, José Manuel",
+      "orcid": "0000-0003-3360-7602",
+      "affiliation": "Departamento de Ingeniería de Organización, Escuela Politécnica Superior, Universidad de Burgos"
+    },
+    {
+      "name": "Díaz-de la Fuente, Silvia",
+      "orcid": "0000-0002-5961-3368",
+      "affiliation": "Departamento de Cartografía e Ingeniería del Terreno, Escuela Politécnica Superior de Ávila, Universidad de Salamanca"
+    },
+    {
+      "name": "Ahedo, Virginia",
+      "orcid": "0000-0002-9812-388X",
+      "affiliation": "Departamento de Ingeniería de Organización, Escuela Politécnica Superior, Universidad de Burgos"
+    },
+    {
+      "name": "Pereda, María",
+      "orcid": "0000-0002-6151-1176",
+      "affiliation": "Grupo de investigación Ingeniería de Organización y Logística (IOL), Escuela Técnica Superior de Ingenieros Industriales, Universidad Politécnica de Madrid; Grupo Interdisciplinar de Sistemas Complejos, Madrid"
+    },
+    {
+      "name": "Santos, José Ignacio",
+      "orcid": "0000-0002-6653-043X",
+      "affiliation": "Departamento de Ingeniería de Organización, Escuela Politécnica Superior, Universidad de Burgos"
+    }
+  ],
+  "description": "<p>Portal docente estático y bilingüe (español e inglés) del Laboratorio de algoritmos genéticos. Organiza el acceso a cinco módulos interactivos de representación, inicialización y evaluación, selección, cruce y mutación; a los simuladores EvoTraveller y SelectionMechanisms; y al libro <em>Evolución a la vista. Algoritmos genéticos en un laboratorio interactivo</em>.</p><p>Esta entrega conserva el código y los recursos propios del portal, su documentación y el inventario de las herramientas externas, con repositorios, versiones, autorías y licencias. Los enlaces no archivan las aplicaciones externas, sus dependencias ni servicios, el libro o las publicaciones enlazadas.</p><p>Licencias del portal: código MIT; contenido docente CC BY 4.0. Los logotipos y las marcas institucionales conservan los derechos de sus titulares. Cada herramienta, el libro y las publicaciones tienen sus propias autorías y licencias.</p><p>Bilingual static teaching portal (Spanish and English) for the Genetic Algorithms Lab. It organises access to five interactive modules on representation, initialisation and evaluation, selection, crossover and mutation; the EvoTraveller and SelectionMechanisms simulators; and the Spanish book <em>Evolución a la vista</em>.</p><p>This release preserves the portal source code and local assets, documentation and external tool inventory. Links do not archive the external applications, dependencies or services, the book or linked publications. Portal code is MIT licensed; teaching content is CC BY 4.0. Institutional logos and trademarks retain their owners' rights; linked resources retain their own authorship and licences.</p><p>Web / Website: <a href=\"https://josemagalan.github.io/genetic-algorithms-lab/\">https://josemagalan.github.io/genetic-algorithms-lab/</a>.</p>",
+  "keywords": [
+    "genetic algorithms",
+    "algoritmos genéticos",
+    "evolutionary computation",
+    "education",
+    "interactive visualization",
+    "teaching software"
+  ],
+  "communities": [
+    {
+      "identifier": "genetic-algorithms-lab"
+    }
+  ]
+}
