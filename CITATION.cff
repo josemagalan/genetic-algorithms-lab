@@ -4,7 +4,7 @@ cff-version: 1.2.0
 message: "If you use this portal, please cite it as below. / Si usas este portal, cítalo así."
 type: software
 title: "Genetic Algorithms Lab / Laboratorio de algoritmos genéticos"
-version: "0.9 beta"
+version: "1.0.0"
 authors:
   - given-names: José Manuel
     family-names: Galán

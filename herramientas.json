@@ -1,0 +1,286 @@
+{
+  "version_formato": 1,
+  "fecha_consulta": "2026-10-31",
+  "descripcion": "Herramientas externas enlazadas desde el portal y versiones registradas para los ejemplos del libro. La consulta de repositorios no es una nueva ejecución de las actividades.",
+  "base_portal_consultada": {
+    "repositorio": "josemagalan/genetic-algorithms-lab",
+    "commit": "eeb71c112840afe8fb0e7f8a3c80ef57232d89b6"
+  },
+  "alcance_archivo": {
+    "incluye": "Archivos propios del portal y este inventario de referencias externas.",
+    "no_incluye": [
+      "Código ni dependencias de las siete herramientas externas",
+      "Servicios desplegados en GitHub Pages, Streamlit o shinyapps.io",
+      "Archivos de lectura ni fuentes del libro",
+      "Manuscritos ni PDF de las publicaciones enlazadas"
+    ],
+    "nota": "Los enlaces a un repositorio o commit no archivan su contenido. Cada recurso conserva su autoría, licencia y versión. Las licencias de terceros siguen siendo las suyas."
+  },
+  "fuente_comprobaciones_libro": {
+    "repositorio": "josemagalan/genetic-algorithms-lab-book",
+    "commit": "1e31b8442f5e1892c4e23187ca91b0b9c23b62fa",
+    "ruta": "comprobaciones/herramientas.json",
+    "url": "https://github.com/josemagalan/genetic-algorithms-lab-book/blob/1e31b8442f5e1892c4e23187ca91b0b9c23b62fa/comprobaciones/herramientas.json",
+    "significado_revisado": "Commit hasta el que el manifiesto del libro registra la revisión de los cambios frente a los ejemplos.",
+    "significado_ejemplos": "Commit y fecha de ejecución de ejemplos registrados por el libro; no indican una ejecución nueva en la fecha de consulta."
+  },
+  "herramientas": {
+    "representation-ga": {
+      "nombre": "Representación",
+      "repositorio": "josemagalan/representation-ga",
+      "url": "https://josemagalan.github.io/representation-ga/",
+      "commit_consultado": "e0eb73b7d222267c05f7a2b33686ff2c874c8a77",
+      "revisado": "e0eb73b7d222267c05f7a2b33686ff2c874c8a77",
+      "ejemplos": {
+        "commit": "424383080ed969030b022684527bdb3625cad979",
+        "fecha_ejecucion_registrada": "2026-10-15"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/representation-ga/blob/e0eb73b7d222267c05f7a2b33686ff2c874c8a77/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/representation-ga/blob/e0eb73b7d222267c05f7a2b33686ff2c874c8a77/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz-de la Fuente, Virginia Ahedo, María Pereda and José Ignacio Santos"
+        },
+        "contenido_docente": {
+          "identificador": "CC-BY-4.0",
+          "url": "https://github.com/josemagalan/representation-ga/blob/e0eb73b7d222267c05f7a2b33686ff2c874c8a77/LICENSE-CONTENT.md"
+        }
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    },
+    "initialization-and-evaluation-ga": {
+      "nombre": "Inicialización y evaluación",
+      "repositorio": "josemagalan/initialization-and-evaluation-ga",
+      "url": "https://josemagalan.github.io/initialization-and-evaluation-ga/",
+      "commit_consultado": "4d7c688b685cd78ac093dbbc2e75b634709071a0",
+      "revisado": "4d7c688b685cd78ac093dbbc2e75b634709071a0",
+      "ejemplos": {
+        "commit": "49c1e2e87d41996bc248138f093c6ba1d9d44ce8",
+        "fecha_ejecucion_registrada": "2026-10-15"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/initialization-and-evaluation-ga/blob/4d7c688b685cd78ac093dbbc2e75b634709071a0/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/initialization-and-evaluation-ga/blob/4d7c688b685cd78ac093dbbc2e75b634709071a0/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz-de la Fuente, Virginia Ahedo, María Pereda and José Ignacio Santos"
+        },
+        "contenido_docente": {
+          "identificador": "CC-BY-4.0",
+          "url": "https://github.com/josemagalan/initialization-and-evaluation-ga/blob/4d7c688b685cd78ac093dbbc2e75b634709071a0/LICENSE-CONTENT.md"
+        }
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    },
+    "selection-ga": {
+      "nombre": "Selección",
+      "repositorio": "josemagalan/selection-ga",
+      "url": "https://josemagalan.github.io/selection-ga/",
+      "commit_consultado": "f23d758a91c9ffc53b59a471f00fcec75c7354af",
+      "revisado": "f23d758a91c9ffc53b59a471f00fcec75c7354af",
+      "ejemplos": {
+        "commit": "7b7d8a9f7b0505db23e592e2e8b08d5d9b06396f",
+        "fecha_ejecucion_registrada": "2026-10-15"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/selection-ga/blob/f23d758a91c9ffc53b59a471f00fcec75c7354af/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/selection-ga/blob/f23d758a91c9ffc53b59a471f00fcec75c7354af/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz-de la Fuente, Virginia Ahedo, María Pereda and José Ignacio Santos"
+        },
+        "contenido_docente": {
+          "identificador": "CC-BY-4.0",
+          "url": "https://github.com/josemagalan/selection-ga/blob/f23d758a91c9ffc53b59a471f00fcec75c7354af/LICENSE-CONTENT.md"
+        }
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    },
+    "crossover-ga": {
+      "nombre": "Cruce",
+      "repositorio": "josemagalan/crossover-ga",
+      "url": "https://josemagalan.github.io/crossover-ga/",
+      "commit_consultado": "e8282764930456eb7497501cb4d967eb527cf66d",
+      "revisado": "e8282764930456eb7497501cb4d967eb527cf66d",
+      "ejemplos": {
+        "commit": "9848d5db96b77351f7e36fb813749acac26385a9",
+        "fecha_ejecucion_registrada": "2026-10-15"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/crossover-ga/blob/e8282764930456eb7497501cb4d967eb527cf66d/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/crossover-ga/blob/e8282764930456eb7497501cb4d967eb527cf66d/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz-de la Fuente, Virginia Ahedo, María Pereda and José Ignacio Santos"
+        },
+        "contenido_docente": {
+          "identificador": "CC-BY-4.0",
+          "url": "https://github.com/josemagalan/crossover-ga/blob/e8282764930456eb7497501cb4d967eb527cf66d/LICENSE-CONTENT.md"
+        }
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    },
+    "mutation-ga": {
+      "nombre": "Mutación",
+      "repositorio": "josemagalan/mutation-ga",
+      "url": "https://josemagalan.github.io/mutation-ga/",
+      "commit_consultado": "2aa6271cfa2f95405c88e51803dc85ebdd83d285",
+      "revisado": "2aa6271cfa2f95405c88e51803dc85ebdd83d285",
+      "ejemplos": {
+        "commit": "cc947470fbc6e7c270b5996661c64adb79ff5e4e",
+        "fecha_ejecucion_registrada": "2026-10-28"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/mutation-ga/blob/2aa6271cfa2f95405c88e51803dc85ebdd83d285/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/mutation-ga/blob/2aa6271cfa2f95405c88e51803dc85ebdd83d285/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz-de la Fuente, Virginia Ahedo, María Pereda and José Ignacio Santos"
+        },
+        "contenido_docente": {
+          "identificador": "CC-BY-4.0",
+          "url": "https://github.com/josemagalan/mutation-ga/blob/2aa6271cfa2f95405c88e51803dc85ebdd83d285/LICENSE-CONTENT.md"
+        }
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    },
+    "evotraveller": {
+      "nombre": "EvoTraveller",
+      "repositorio": "jismartin/evotraveller",
+      "url": "https://evotraveller.streamlit.app/",
+      "commit_consultado": "b3fcd87aed8fe57803820e89df60f99945262ebc",
+      "revisado": "b3fcd87aed8fe57803820e89df60f99945262ebc",
+      "ejemplos": {
+        "commit": "a283c15fa80b82a2d19f1ee6fe1197b569ac7054",
+        "fecha_ejecucion_registrada": "2026-10-30"
+      },
+      "autores": [
+        "José Ignacio Santos",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Manuel Galán"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/genetic-algorithms-lab/blob/eeb71c112840afe8fb0e7f8a3c80ef57232d89b6/README.md#créditos-y-licencias--credits-and-licenses",
+      "nota_autoria": "Cuatro autores acreditados por el proyecto; la mención de copyright del código se conserva por separado tal como figura en LICENSE.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/jismartin/evotraveller/blob/b3fcd87aed8fe57803820e89df60f99945262ebc/LICENSE",
+          "mencion_copyright": "Copyright (c) 2024 jismartin"
+        },
+        "contenido_docente": null
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "La revisión técnica del 30 de octubre dejó pendiente comprobar la actualización de Streamlit. Consultar el repositorio corregido no cierra esa comprobación."
+      }
+    },
+    "SelectionMechanisms": {
+      "nombre": "SelectionMechanisms",
+      "repositorio": "josemagalan/SelectionMechanisms",
+      "url": "https://josemagalan.shinyapps.io/SelectionMechanisms/",
+      "commit_consultado": "8f62120b638d03e745677143ea9dfc6c08437c33",
+      "revisado": "8f62120b638d03e745677143ea9dfc6c08437c33",
+      "ejemplos": {
+        "commit": "0abde8598f59aaf696228dbf72f4af88991240fc",
+        "fecha_ejecucion_registrada": "2026-10-08"
+      },
+      "autores": [
+        "José Manuel Galán",
+        "Silvia Díaz-de la Fuente",
+        "Virginia Ahedo",
+        "María Pereda",
+        "José Ignacio Santos"
+      ],
+      "fuente_autoria": "https://github.com/josemagalan/SelectionMechanisms/blob/8f62120b638d03e745677143ea9dfc6c08437c33/README.md",
+      "nota_autoria": "Nombres normalizados según los créditos del proyecto; la mención de copyright se conserva literalmente.",
+      "licencias": {
+        "codigo": {
+          "identificador": "MIT",
+          "url": "https://github.com/josemagalan/SelectionMechanisms/blob/8f62120b638d03e745677143ea9dfc6c08437c33/LICENSE",
+          "mencion_copyright": "Copyright (c) 2026 José Manuel Galán, Silvia Díaz de la Fuente, Virginia Ahedo, María Pereda & José Ignacio Santos"
+        },
+        "contenido_docente": null
+      },
+      "despliegue": {
+        "commit_identificado": null,
+        "comprobado_en_esta_revision": false,
+        "nota": "No se ha identificado ni probado de nuevo el código servido por la aplicación pública en esta revisión documental."
+      }
+    }
+  },
+  "libro_relacionado": {
+    "nombre": "Evolución a la vista. Algoritmos genéticos en un laboratorio interactivo",
+    "repositorio": "josemagalan/genetic-algorithms-lab-book",
+    "url": "https://josemagalan.github.io/genetic-algorithms-lab-book/",
+    "commit_consultado": "1e31b8442f5e1892c4e23187ca91b0b9c23b62fa",
+    "incluido_en_archivo_portal": false,
+    "licencias": {
+      "contenido": "CC-BY-4.0",
+      "codigo": "MIT"
+    },
+    "nota": "El libro tiene su propia entrega. El PDF completo preparado no se convierte en un archivo del portal por aparecer aquí enlazado."
+  }
+}

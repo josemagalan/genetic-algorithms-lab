@@ -6,6 +6,24 @@ A bilingual, static portal for genetic algorithm teaching modules, simulators, a
 
 Portal estático bilingüe que reúne cinco módulos interactivos, dos simuladores y un libro, *Evolución a la vista*. La autoría y la licencia de cada recurso se indican en sus repositorios y publicaciones:
 
+## Estado, versiones y archivo / Status, versions and archiving
+
+El portal está en la versión **1.0.0**; el libro conserva su identificación como beta. El portal, el libro y cada herramienta tienen sus propias versiones; una entrega del portal no cambia automáticamente la versión de los demás recursos.
+
+The portal is at version **1.0.0**; the book retains its beta status. The portal, book and individual tools are versioned separately; a portal release does not automatically change the other resources' versions.
+
+El [inventario de herramientas](HERRAMIENTAS.md), también disponible como [JSON](herramientas.json), identifica las siete aplicaciones externas, sus repositorios, commits consultados y revisados, commits y fechas de ejecución de ejemplos registrados en el libro, autorías y licencias. Distingue la revisión del repositorio de la comprobación del servicio desplegado.
+
+The [tool inventory](HERRAMIENTAS.md), also available as [JSON](herramientas.json), records the seven external applications, their repositories, consulted and reviewed commits, example commits and execution dates recorded by the book, authorship and licences. Repository review is distinct from checking the deployed service.
+
+Una entrega archivada de este repositorio conserva los archivos del portal y su inventario. Los enlaces no archivan el código de las herramientas, sus dependencias, las aplicaciones desplegadas, el libro ni las publicaciones. Cada recurso conserva su autoría y licencia.
+
+An archived release of this repository preserves the portal files and its inventory. Links do not archive tool source code, dependencies, deployed applications, the book or publications. Each resource retains its own authorship and licence.
+
+Para citar el portal, consulta [CITATION.cff](CITATION.cff). El DOI de versión se incorporará cuando exista una entrega archivada; la dirección de GitHub Pages sigue siendo el acceso a la web activa.
+
+To cite the portal, see [CITATION.cff](CITATION.cff). A version DOI will be added when an archived release exists; the GitHub Pages address remains the entry point for the live website.
+
 <!-- ga-series-links:start -->
 ## Teaching resources / Materiales docentes
 
@@ -41,9 +59,9 @@ The second paper's acceptance was confirmed by the author on 7 October 2026. Thi
 
 ## Uso local / Local use
 
-Abre `index.html` en un navegador. Los enlaces y gráficos no necesitan servidor ni conexión; las aplicaciones enlazadas sí necesitan conexión. Para cambiar de idioma con una URL compartible, usa un servidor local:
+Abre `index.html` en un navegador. La interfaz y los gráficos del portal funcionan sin servidor ni conexión; abrir las aplicaciones, el libro, los repositorios y las publicaciones enlazados requiere conexión. Para cambiar de idioma con una URL compartible, usa un servidor local:
 
-Open `index.html` in a browser. Portal links and graphics work without a server or network connection; the linked applications require network access. For language switching with a shareable URL, use the local server:
+Open `index.html` in a browser. The portal interface and graphics work without a server or network connection; opening the linked applications, book, repositories and publications requires network access. For language switching with a shareable URL, use the local server:
 
 ```sh
 npm start
@@ -60,7 +78,7 @@ No installation or build is needed. Node.js 22 or later is only required for the
 - Español: `?lang=es`. English: `?lang=en`.
 - El idioma de la URL tiene prioridad; después se usa la elección guardada y el idioma del navegador.
 - The URL language takes priority, followed by the saved choice and browser language.
-- Los pasos del ciclo con pantalla propia la abren directamente: crear la población inicial (`item=uniform`), evaluar (`item=pipeline`) y reemplazar (`op=elitism`); Las pantallas admitidas están en `screens` (`js/content.js`). / Cycle steps with their own screen open it directly; allowed screens are listed in `screens`.
+- Los pasos del ciclo con pantalla propia la abren directamente: crear la población inicial (`item=uniform`), evaluar (`item=pipeline`) y reemplazar (`op=elitism`); las pantallas admitidas están en `screens` (`js/content.js`). / Cycle steps with their own screen open it directly; allowed screens are listed in `screens`.
 - Los enlaces a los cinco módulos y sus bancos Moodle disponibles conservan el idioma. EvoTraveller, Shiny y el libro conservan sus direcciones oficiales. / Module links and available Moodle banks preserve the language. EvoTraveller, Shiny and the book use their official URLs.
 - Modo claro/oscuro según el sistema. / Light and dark appearance follows the system preference.
 
@@ -95,7 +113,7 @@ All five modules include a global return link that preserves the language. Their
 
 ## Comentarios / Feedback
 
-El portal y el libro están en versión beta. Los comentarios sobre el portal van a los *issues* de este repositorio (plantillas: errata, enlace o resultado distinto, problema de uso, sugerencia); los del libro, a su formulario («Enviar un comentario sobre esta página» en cada página). Quien no use GitHub puede escribir a los autores a través de sus páginas, enlazadas en «Sobre el proyecto». / Portal feedback goes to this repository's issues; book feedback, to the book's form. Without GitHub, write to the authors through their pages.
+Los comentarios sobre el portal van a los *issues* de este repositorio (plantillas: errata, enlace o resultado distinto, problema de uso, sugerencia); los del libro, a su formulario («Enviar un comentario sobre esta página» en cada página). Quien no use GitHub puede escribir a los autores a través de sus páginas, enlazadas en «Sobre el proyecto». / Portal feedback goes to this repository's issues; book feedback, to the book's form. Without GitHub, write to the authors through their pages.
 
 ## Créditos y licencias / Credits and licenses
 

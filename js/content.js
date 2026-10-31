@@ -62,7 +62,7 @@
       compareTitle: 'Compara alternativas', compareDesc: 'Aplica distintos mecanismos u operadores a los mismos datos.',
       moodleTitle: 'Llévalo a Moodle', moodleDesc: 'Bancos de preguntas para profesorado, con soluciones enlazadas al ejemplo.',
       bookLinkHero: 'Empieza por el libro', bookHintHero: '¿Empiezas de cero? El libro te guía paso a paso y abre cada herramienta desde sus ejemplos.',
-      feedbackText: 'Es una versión beta. ¿Has visto un error o tienes una sugerencia?', feedbackPortal: 'Coméntalo en GitHub', feedbackBook: 'sobre el libro',
+      feedbackText: '¿Has visto un error o tienes una sugerencia?', feedbackPortal: 'Coméntalo en GitHub', feedbackBook: 'sobre el libro',
       feedbackAuthors: 'sin GitHub, escribe a los autores desde sus páginas, enlazadas arriba.',
       manualNav: 'Libro', manualEyebrow: 'El libro · Versión beta 0.9',
       manualLead: 'Un recorrido práctico para aprender y usar algoritmos genéticos con los materiales del laboratorio. Combina explicaciones, ejemplos reproducibles, actividades en las herramientas y ejercicios.',
@@ -70,7 +70,7 @@
       aboutEyebrow: 'Herramientas docentes abiertas', aboutTitle: 'Para enseñar y aprender.',
       aboutLead: 'Este portal reúne cinco módulos interactivos, dos simuladores y un libro para cursos de metaheurísticas, computación evolutiva e ingeniería de organización. Consulta la autoría y la licencia de cada recurso en su repositorio.',
       licenses: 'Este portal: código MIT · contenido docente CC BY 4.0. El libro: CC BY 4.0. Cada herramienta indica su licencia en su repositorio.', institutions: 'Instituciones participantes',
-      footerText: 'Laboratorio de algoritmos genéticos · Herramientas docentes abiertas', backTop: 'Volver arriba',
+      footerText: 'Laboratorio de algoritmos genéticos · Herramientas docentes abiertas · v1.0.0', backTop: 'Volver arriba',
     },
     en: {
       docTitle: 'Genetic Algorithms Lab · Teaching tools',
@@ -133,7 +133,7 @@
       compareTitle: 'Compare alternatives', compareDesc: 'Apply different mechanisms or operators to the same data.',
       moodleTitle: 'Take it to Moodle', moodleDesc: 'Question banks for teachers, with solutions linked to the example.',
       bookLinkHero: 'Start with the book', bookHintHero: 'New to genetic algorithms? The book (in Spanish) guides you step by step and opens each tool from its examples.',
-      feedbackText: 'This is a beta version. Found a mistake or have a suggestion?', feedbackPortal: 'Tell us on GitHub', feedbackBook: 'about the book',
+      feedbackText: 'Found a mistake or have a suggestion?', feedbackPortal: 'Tell us on GitHub', feedbackBook: 'about the book',
       feedbackAuthors: 'without GitHub, write to the authors through their pages, linked above.',
       manualNav: 'Book', manualEyebrow: 'The book · In Spanish · Beta 0.9',
       manualLead: 'A practical route for learning and using genetic algorithms with the lab materials. It combines explanations, reproducible examples, activities in the tools and exercises.',
@@ -141,7 +141,7 @@
       aboutEyebrow: 'Open teaching tools', aboutTitle: 'For teaching and learning.',
       aboutLead: 'This portal brings together five interactive modules, two simulators and a book for courses on metaheuristics, evolutionary computation and industrial engineering. Find each resource’s authorship and licence in its repository.',
       licenses: 'This portal: code MIT · teaching content CC BY 4.0. The book: CC BY 4.0. Each tool states its own licence in its repository.', institutions: 'Participating institutions',
-      footerText: 'Genetic Algorithms Lab · Open teaching tools', backTop: 'Back to top',
+      footerText: 'Genetic Algorithms Lab · Open teaching tools · v1.0.0', backTop: 'Back to top',
     },
   };
   const tools = ['representation-ga', 'initialization-and-evaluation-ga', 'selection-ga', 'crossover-ga', 'mutation-ga'];
