@@ -140,9 +140,10 @@ test('beginners are sent to the book from the hero (beta review, M05)', () => {
 test('license scope and beta feedback are explicit (beta review, M03, M04, M06)', () => {
   for (const language of ['es', 'en']) {
     assert.match(messages[language].licenses, /CC BY 4\.0/);
-    assert.match(messages[language].manualEyebrow, /0\.9/);
+    assert.match(messages[language].manualEyebrow, /1\.0/);
   }
   assert.ok(html.includes('https://github.com/josemagalan/genetic-algorithms-lab/issues/new/choose'));
   assert.ok(html.includes('https://github.com/josemagalan/genetic-algorithms-lab-book/issues/new?template=comentario.yml'));
   assert.ok(!html.includes('mailto:'));
+  assert.ok(html.includes('https://doi.org/10.5281/zenodo.23835732'), 'DOI del libro (todas las versiones)');
 });

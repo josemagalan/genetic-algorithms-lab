@@ -30,7 +30,7 @@ Los cinco módulos separan código MIT y contenido docente CC BY 4.0. EvoTravell
 
 El archivo del portal conserva sus propios archivos y este inventario. No incluye el código, las dependencias ni los servicios de las siete aplicaciones externas, el libro ni las publicaciones. Un enlace a un commit identifica una versión; no preserva por sí solo sus archivos. / The portal archive contains its own files and this inventory. It excludes the source code, dependencies and services of the seven external applications, the book and publications. A commit link identifies a version but does not itself preserve its files.
 
-El libro [*Evolución a la vista*](https://josemagalan.github.io/genetic-algorithms-lab-book/) es un recurso relacionado con entrega propia: [fuentes consultadas `1e31b84`](https://github.com/josemagalan/genetic-algorithms-lab-book/tree/1e31b8442f5e1892c4e23187ca91b0b9c23b62fa), contenido CC BY 4.0 y código MIT. / The book is a related resource with its own release.
+El libro [*Evolución a la vista*](https://josemagalan.github.io/genetic-algorithms-lab-book/) es un recurso relacionado con entrega propia, la versión 1.0 archivada en Zenodo ([DOI 10.5281/zenodo.23835733](https://doi.org/10.5281/zenodo.23835733), etiqueta `v1.0`): [fuentes consultadas `1e31b84`](https://github.com/josemagalan/genetic-algorithms-lab-book/tree/1e31b8442f5e1892c4e23187ca91b0b9c23b62fa), contenido CC BY 4.0 y código MIT. / The book is a related resource with its own release.
 
 ## Límite conocido / Known limitation
 

@@ -276,6 +276,10 @@
     "repositorio": "josemagalan/genetic-algorithms-lab-book",
     "url": "https://josemagalan.github.io/genetic-algorithms-lab-book/",
     "commit_consultado": "1e31b8442f5e1892c4e23187ca91b0b9c23b62fa",
+    "version_publicada": "1.0",
+    "etiqueta": "v1.0",
+    "doi_version": "10.5281/zenodo.23835733",
+    "doi_concepto": "10.5281/zenodo.23835732",
     "incluido_en_archivo_portal": false,
     "licencias": {
       "contenido": "CC-BY-4.0",

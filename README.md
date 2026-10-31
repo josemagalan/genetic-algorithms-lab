@@ -8,9 +8,9 @@ Portal estático bilingüe que reúne cinco módulos interactivos, dos simulador
 
 ## Estado, versiones y archivo / Status, versions and archiving
 
-El portal está en la versión **1.0.0**; el libro conserva su identificación como beta. El portal, el libro y cada herramienta tienen sus propias versiones; una entrega del portal no cambia automáticamente la versión de los demás recursos.
+El portal está en la versión **1.0.0**; el libro, en la **1.0** ([DOI 10.5281/zenodo.23835733](https://doi.org/10.5281/zenodo.23835733); versión más reciente: [10.5281/zenodo.23835732](https://doi.org/10.5281/zenodo.23835732)). El portal, el libro y cada herramienta tienen sus propias versiones; una entrega del portal no cambia automáticamente la versión de los demás recursos.
 
-The portal is at version **1.0.0**; the book retains its beta status. The portal, book and individual tools are versioned separately; a portal release does not automatically change the other resources' versions.
+The portal is at version **1.0.0**; the book is at version **1.0** ([DOI 10.5281/zenodo.23835733](https://doi.org/10.5281/zenodo.23835733); latest version: [10.5281/zenodo.23835732](https://doi.org/10.5281/zenodo.23835732)). The portal, book and individual tools are versioned separately; a portal release does not automatically change the other resources' versions.
 
 El [inventario de herramientas](HERRAMIENTAS.md), también disponible como [JSON](herramientas.json), identifica las siete aplicaciones externas, sus repositorios, commits consultados y revisados, commits y fechas de ejecución de ejemplos registrados en el libro, autorías y licencias. Distingue la revisión del repositorio de la comprobación del servicio desplegado.
 
@@ -41,7 +41,7 @@ To cite the portal, see [CITATION.cff](CITATION.cff). A version DOI will be adde
 | SelectionMechanisms | [Open / Abrir](https://josemagalan.shinyapps.io/SelectionMechanisms/) | [GitHub](https://github.com/josemagalan/SelectionMechanisms) |
 | Book / Libro: *Evolución a la vista* | [Read / Leer](https://josemagalan.github.io/genetic-algorithms-lab-book/) | [GitHub](https://github.com/josemagalan/genetic-algorithms-lab-book) |
 
-El libro está en versión beta: su contenido y estructura pueden cambiar. / The book, in Spanish, is in beta: its content and structure may change.
+El libro está en español. / The book is in Spanish.
 <!-- ga-series-links:end -->
 
 La serie interactiva cubre representación, inicialización, evaluación, selección, cruce y mutación paso a paso. EvoTraveller muestra un algoritmo completo aplicado al viajante. SelectionMechanisms permite comparar dinámicas de selección, convergencia y diversidad. El libro *Evolución a la vista*, todavía en construcción, organiza estos materiales en un itinerario con explicaciones, actividades y ejercicios.
