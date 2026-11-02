@@ -139,7 +139,7 @@ test('beginners are sent to the book from the hero (beta review, M05)', () => {
     assert.ok(messages[language].bookEnglishHero);
     assert.ok(messages[language].openManualEnglish);
     assert.match(messages[language].manualEditions, /IA|AI-generated/);
-    assert.match(messages[language].manualEditions, /pendiente|pending/);
+    assert.match(messages[language].manualEditions, /revisada manualmente|reviewed manually/);
     assert.ok(messages[language].bookHintHero);
   }
   assert.ok(!html.includes('id="start"'));
