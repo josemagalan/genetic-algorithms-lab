@@ -154,4 +154,6 @@ test('license scope and beta feedback are explicit (beta review, M03, M04, M06)'
   assert.ok(html.includes('https://github.com/josemagalan/genetic-algorithms-lab-book/issues/new?template=comentario.yml'));
   assert.ok(!html.includes('mailto:'));
   assert.ok(html.includes('https://doi.org/10.5281/zenodo.23835732'), 'DOI del libro (todas las versiones)');
+  assert.ok(html.includes('https://doi.org/10.5281/zenodo.23890033'), 'DOI de la traducción inglesa (todas las versiones)');
+  for (const language of ['es', 'en']) assert.ok(messages[language].manualDoiEnglish);
 });
