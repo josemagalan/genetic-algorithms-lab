@@ -119,6 +119,10 @@ All five modules include a global return link that preserves the language. Their
 
 Los comentarios sobre el portal van a los *issues* de este repositorio (plantillas: errata, enlace o resultado distinto, problema de uso, sugerencia); los del libro, a su formulario («Enviar un comentario sobre esta página» en cada página). Quien no use GitHub puede escribir a los autores a través de sus páginas, enlazadas en «Sobre el proyecto». / Portal feedback goes to this repository's issues; book feedback, to the book's form. Without GitHub, write to the authors through their pages.
 
+## Estadísticas de uso / Usage statistics
+
+El portal cuenta las páginas vistas con [GoatCounter](https://www.goatcounter.com/), sin cookies y sin identificar a los visitantes; el total aparece en el pie y el [panel](https://josemagalan.goatcounter.com/) es público. El script se carga en `index.html`, y `js/contador.js` muestra el total. / The portal counts page views with GoatCounter, without cookies and without identifying visitors; the total appears in the footer and the public dashboard is open. The script is loaded in `index.html`, and `js/contador.js` shows the total.
+
 ## Créditos y licencias / Credits and licenses
 
 - Genetic algorithms lab and SelectionMechanisms authors / Autores del laboratorio de algoritmos genéticos y SelectionMechanisms: José Manuel Galán¹\* ([ORCID 0000-0003-3360-7602](https://orcid.org/0000-0003-3360-7602)), Silvia Díaz-de la Fuente² ([ORCID 0000-0002-5961-3368](https://orcid.org/0000-0002-5961-3368)), Virginia Ahedo¹ ([ORCID 0000-0002-9812-388X](https://orcid.org/0000-0002-9812-388X)), María Pereda³ ⁴ ([ORCID 0000-0002-6151-1176](https://orcid.org/0000-0002-6151-1176)), José Ignacio Santos¹ ([ORCID 0000-0002-6653-043X](https://orcid.org/0000-0002-6653-043X)). \* Corresponding author / Autor de correspondencia.

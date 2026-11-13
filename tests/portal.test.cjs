@@ -157,3 +157,13 @@ test('license scope and beta feedback are explicit (beta review, M03, M04, M06)'
   assert.ok(html.includes('https://doi.org/10.5281/zenodo.23890033'), 'DOI de la traducción inglesa (todas las versiones)');
   for (const language of ['es', 'en']) assert.ok(messages[language].manualDoiEnglish);
 });
+
+test('page views are counted with GoatCounter, without cookies, and the total is shown in the footer', () => {
+  assert.ok(html.includes('data-goatcounter="https://josemagalan.goatcounter.com/count"'));
+  assert.ok(html.includes('src="js/contador.js?v=1"'));
+  assert.ok(/<footer class="footer">[\s\S]*id="visit-count" hidden/.test(html));
+  for (const language of ['es', 'en']) {
+    assert.match(messages[language].statsNote, /GoatCounter/);
+    assert.ok(messages[language].statsLink);
+  }
+});
